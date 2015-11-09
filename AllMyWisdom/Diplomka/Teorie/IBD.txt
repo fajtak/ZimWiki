@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-03-20T15:13:22+04:00
+
+====== IBD ======
+Created Čtvrtek 20 březen 2014
+
+**Inverse Beta Decay**
+
+	{{./equation.png?type=equation}}
+
+* energetický práh 1.8 MeV
+* většina energie předána pozitronu, je z něho také měřena primární energie neutrina
+* pozitron se zastaví v řádu několi cm -> 2 gamma (511keV v 180°) => PROMPT SIGNAL 
+	[ ] Simulace doletu pozitronu v detektoru @simulation
+	[ ] Vliv anihilace za letu na data. Kolik % @simulation	
+* neutron (několik keV) je termalizován a zachycen na Gd -> sprška gamma o celkové energii 8 MeV (30 - 40cm) => DELAYED SIGNAL
+	[ ] Vzdálenost doletu neutronu v detektoru @simulation
+	[ ] Počet vyprodukovaných gamma -> multiplicita @simulation
+	[ ] Dolet různě energetických gamma v scintilátoru (dolet před první interakcí, celkový dolet) @simulation
+	[ ] Sehnat Gd @experiment 
+* doba mezi Prompt a delayed je dána dvěmi konstantami τ_m (moderation) a τ_c (capture) - závisí na struktuře detektoru
+	[ ] Doba termalizace a záchytu vzhledem k množství Gd @simulation
+	[ ] Vzdálenost mezi anihilací pozitronu a záchytem neutronu  @simulation 
+
+* rozdělení časů mezi Prompt and Delayed je kombinací dvou exponent
+	{{./equation001.png?type=equation}}
+
+{{./pasted_image001.png}}

@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-12-04T16:44:34+01:00
+
+====== Podélný Útlum ======
+Created Čtvrtek 04 prosinec 2014
+
+Použito sedm párů trigrovacích scintilátorů rovnoměrně rozložených po délce 40 cm našeho detektoru. Plát pokryt Gd a obalem Mylarem, deset vláken o průměru 1.2 mm po 2 cm.
+
+NENÍ čistě expomenciální. Velký vliv okrajových efektů. Nejlepší signál mezi 14 až 20 cm. Signál úplně z konce až o 20% slabší.
+
+{{file:///Data/MatFyz/diplomka/skripts/results/longAtenGd.gif}}
+
+************************************************************************ 
+* RESULTS                                                                              *
+************************************************************************
+Position		  	|   2.9 |  8.6 | 14.3 | 20.0 | 25.7 | 31.4 | 37.1 | 
+-----------------------------------------------------------------------------------------------------------------------
+Mean value  		|  27.4 | 28.7 | 29.4 | 29.4 | 28.9 | 26.8 | 23.9 | 
+------------------------------------------------------------------------------------------------------------------------
+Error +-       	     	|  5.23 | 5.36 | 5.42 | 5.42 | 5.37 | 5.18 | 4.89 | 
+************************************************************************

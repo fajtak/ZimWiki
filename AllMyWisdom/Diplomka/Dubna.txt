@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-11-15T23:41:15+01:00
+
+====== Dubna ======
+Created Sobota 15 listopad 2014
+
+=== Příprava plátů ===
+	* nastříhání a broušení vláken (Polyethylen s dírou). Dále namočení do stříbrné barvy.
+	* Očištění plátů (povrch a drážky) něčím na bázi alkoholu (ethanol)  . Přichycení vláken dvousložkovým lepidlem Epilox. Po pár minutách namíchají lepidlo na vlákna a pipetou aplikují. Používají polyethylen jako zátěž. Přelepí mylarem.
+	* Zabalí do mylaru.
+	* Použijí stejné dvousložkové lepidlo jako na uchycení na přilepení do držáku na PMT vytvořeném v 3D-tiskárně.
+	[*] Zjistit čím to omývají, název toho lepidla, název té stříbrné barvy a lepidla na vlákna @Dubna 
+		Omývají Izopropylem, lepidlo Poxipol, Barva neznámá, Araldite 2020 A/B
+	[*] Zjistit popis elektroniky @Dubna 
+
+=== Simulace deponované energie Miony ===
+	Energy Deposit
+		* Median = 1.935 MeV
+		* Maximum = 1.771 MeV
+		* Mean = 2.089 MeV
+
+* [[Diplomka:Dubna:Obalové_Materiály|Měření obalových materiálů]]
+* [[:Diplomka:Dubna:Koncentrace|Měření optimálních koncentrací]] 
+* [[+Útlum_Ve_Vláknu|Měření útlumu ve vláknu]] 
+* [[+Zakončení_Vláken|Měření zakončení vláken]] 
+* [[+Podélný_Útlum|Měření podélného útlumu v detektoru]]
+* [[+Germániový_Detektor|Germániový detektor]]
+* [[Dubna:Gadolinium|Gadolinium]] 
+

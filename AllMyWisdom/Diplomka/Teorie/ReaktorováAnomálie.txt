@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-03-22T08:38:02+04:00
+
+====== ReaktorováAnomálie ======
+Created Sobota 22 březen 2014
+
+* neshoda mezi experimenty a teorií, která předpokládá přibližně o 5% větší tok neutrin v místech blízkých experimentů měřících reaktorová antineutrina
+* je možné vysvětlit oscilacemi s dalším sterilním neutrinem (1 eV^2) na krátkých vzdálenostech
+* velikost jádra je poměrně velká, ale nemělo by mít významný vliv na detekovaný oscilační patern
+* Výsledky z experimentu DANSS za  měsíců, oscilační patern je jednoznačně viditelný nad úroveň chyb
+
+	{{./pasted_image.png}}
+	* Konkrétní teoretické předpoklady pro DANSS v různých vzdálenostech pro různé energie detekovaných antineutrin (modrá 2-3.5Mev, červená 3.5 - 5.5, zelená 5.5 -8) 
+	{{./pasted_image001.png}}

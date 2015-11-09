@@ -1,0 +1,73 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-10-20T14:13:32+02:00
+
+====== Git ======
+Created Úterý 20 říjen 2015
+
+Data - stream of snapshots
+
+====== The Three states ======
+
+Git has three main states that your files can reside in: commited, modified, and staged.
+	- commited = stored in your local database
+	- modified = filed is changed and have not committed yet
+	- staged = you have marked a modified file to go into your next commit snapshot
+	
+
+====== Three main sections ======
+
+Git directory - metadata abd object database is stored here
+The working directory - current version of the project
+Staging area - file (in Git directory), that stores infromation about what will go into your next commit.
+
+====== Git  basics ======
+
+===== Getting a Git Repository =====
+1) take an existing project or directory and imports it into Git - **git init**
+2) clone an existing Git repository from another server - **git clone https://... name_of_folder**
+
+===== Recording Changes to the Repository =====
+Files in your working directory can be **tracked** or **untracked**
+**Tracked **files can be unmodified, modified, staged.
+
+==== Checking the Status of your Files ====
+How to check status - **git status**
+Short version - **git status -s **
+
+==== Tracking New Files ====
+To begin tracking new files - **git add file_name**
+
+==== Staging Modified Files ====
+The same as for new files - **git add file_name**
+
+==== Ignoring Files ====
+Files which you do not want to be shown - **you should create .gitignore {*.[oa],*~}**
+
+==== Viewing Staged and Unstaged Changes ====
+If you want to know what changed exactly - **git diff / git diff --staged**
+Answer to the two questions: What have you changed but not yet staged and what have you staged that you are about to commit.
+
+==== Commiting Your Changes ====
+With prepared staging area - **git commit**
+Nebo - **git commit -m "Name of commit"**
+
+==== Skipping the Staging Area ====
+Commit all tracked files - **git commit -a**
+
+==== Removing Files ====
+To remoce a file from Git, you have to remove it from your tracked files and the commit - **git rm (odstrani i ze slozky)**
+To remove from Git but keep in the working folder - **git rm --cached file_name**
+
+==== Moving Files ====
+**git mv file_from file_to**
+
+==== Viewing the Commit History ====
+To show history of commits - **git log**
+To show the difference in each commit - **git log -p**
+
+===== Jak stahovat na Halovi a Rexovi =====
+git clone git://github.com/fajtak/S3Plate.git
+
+
+

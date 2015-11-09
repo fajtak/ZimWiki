@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-03-20T14:30:49+04:00
+
+====== Diplomka ======
+Created Čtvrtek 20 březen 2014
+
+**Project SCube**
+
+**Teorie :** 
+	[[+Teorie:Spektra_Neutrin|Spektra Neutrin]]
+	
+**Experiment :**
+	[[+Dubna]] 
+
+**Simulace :** 
+	[[+Simulace:NutnoUdelat]]
+	[[+Simulace:Vysledky]]  
+
+**Myšlenky :**
+
+**Prodiskutovat :** 
+	Návrh a koupě stínění
+	Návrh a vývoj výtahu - oscilace?
+	Sehnání zářiče 248Cm
+	Gd - koupě a způsob použití v experimentu
+	Simulace
+
+

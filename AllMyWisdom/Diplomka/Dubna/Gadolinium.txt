@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-02-05T15:57:48+01:00
+
+====== Gadolinium ======
+Created Čtvrtek 05 únor 2015
+
+Použítí gadolinia ve formě vodného roztoku (GdCl3) na papírových ubrouscích nebo ve formě fólie (izopepa a Gd2O3)
+
+{{file:///Data/MatFyz/diplomka/Results/gadolinium.png?width=1200}}{{file:///Data/MatFyz/diplomka/Photos/Photos_Dec2014/20141209_140211.jpg?width=1200}}{{file:///Data/MatFyz/diplomka/Photos/Photos_Dec2014/20141210_094851.jpg?width=1200}}
+

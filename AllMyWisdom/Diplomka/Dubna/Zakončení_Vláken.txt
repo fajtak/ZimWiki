@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-12-04T16:41:51+01:00
+
+====== Zakončení Vláken ======
+Created Čtvrtek 04 prosinec 2014
+
+Měření síly signálu pro různé zakončení vlákna - neleštěné, leštěné, leštěné s hliníkovou fólií na koncích, leštěné se stříbrnou barvou. Neleštěné a leštěné měřeno 3x v různých pořádích, leštěno i rukou.
+
+
+{{file:///Data/MatFyz/diplomka/skripts/results/fiberEnd.gif}}
+Druhé měření pro ověření platnosti.
+	Polish - polished 1000s
+	Polver- polished, 500s
+	MOVED by Sláva
+	Polver1 a Polver2 - 500s, s vypnutím a zapnutím PMT
+	SCINTILÁTOR INSIDE
+	Polver3 - 500s polished
+	Polver4 - 500s bare
+	Polver5 - polished
+	polver6 - paint 1
+	polver7 - paint 2
+	polver - paint 3
+	polver - bare fiber 
+
+{{file:///Data/MatFyz/diplomka/skripts/results/fiberEnd2.gif}}

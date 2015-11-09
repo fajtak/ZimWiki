@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-11-09T12:06:31+01:00
+
+====== SCube ======
+Created Pondělí 09 listopad 2015
+
+==== Měření ====
+ [[+Gd_layer]] 
+
+==== Simulace ====

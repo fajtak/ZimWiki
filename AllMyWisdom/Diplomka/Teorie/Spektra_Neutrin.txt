@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-12-04T17:36:05+01:00
+
+====== Spektra Neutrin ======
+Created Čtvrtek 04 prosinec 2014
+
+===== Teorie =====
+
+The antineutrino event rate as a function of time. the relative rate of ν  events for 239 Pu, 235 U and the sum of both, as a function of time, from a
+representative LEU fueled power reactor.
+{{file:///Data/MatFyz/diplomka/Pictures/ratioU%26PuNeutrinoSpectra.png}}
+
+===== Simulace =====
+
+Konvoluce spektra neutrin emitovaných z reaktoru s účinným průřezem IBD
+	* modře - U235
+	* zeleně - Pu241
+	* červeně - Pu239
+{{file:///Data/MatFyz/diplomka/skripts/results/neutrinoSpectra.png}}
+Vývoj spectra v různých časových úsecích spalování paliva
+	* červeně - počátek
+	* zeleně - 5 měsíců
+	* modře - 10 měsíců
+	* žlutě - 17 měsíců
+{{file:///Data/MatFyz/diplomka/skripts/results/neutrinoSpectraTime.png}}
+Porovnání spekter na začátku a na konci spalovacího cyklu
+
+{{file:///Data/MatFyz/diplomka/skripts/results/neutrinoSpectraComp.png}}
+Fitování spekter v různých časových okamžicích spalovacího cyklu
+
+{{file:///Data/MatFyz/diplomka/skripts/results/neutrinoSpectraStart.png}}
+Různé účinnosti fitu v různých časech
+	* U (100) Pu (0) - > U(98.86) Pu(1.06)
+	* U(84) Pu(13) -> U(79.41) Pu(20.10)
+	* U(70) Pu(22.5) -> U(65.95) Pu(32.97)
+	* U(58) Pu(28) -> U(54.55) Pu(39.5)
+

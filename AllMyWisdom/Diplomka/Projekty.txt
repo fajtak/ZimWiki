@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-11-15T23:36:46+01:00
+
+====== Projekty ======
+Created Sobota 15 listopad 2014
+
+[[+Danssino]] 
+[[+Bugey]] 
+[[+PANDA]] 
+

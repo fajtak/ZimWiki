@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-11-24T10:45:14+01:00
+
+====== Elektronika ======
+Created Pondělí 24 listopad 2014
+
+{{file:///Data/MatFyz/diplomka/Experiment/electronics.png}}

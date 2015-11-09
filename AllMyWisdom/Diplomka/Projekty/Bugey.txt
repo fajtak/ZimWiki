@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-03-20T14:32:39+04:00
+
+====== Bugey ======
+Created Čtvrtek 20 březen 2014
+
+* 15 metrů od reaktoru 2.8GW
+* Více než 300 000 detekcí neutrin

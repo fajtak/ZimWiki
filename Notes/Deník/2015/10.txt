@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-10-20T16:57:45+02:00
+
+====== říjen 2015 ======
+
+20. října - prezentace na dny Dubny + zprovozněn Git a čtení návodu
+21. října - prezentace na dny Dubny, Sesynchronizování simulačního balíku pro desku a commit a na TGV, studium Git, Debata s Petrem Přidalem o měření a Spektrometry od Petra Maška

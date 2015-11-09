@@ -1,0 +1,61 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-11-16T00:12:44+01:00
+
+====== listopad 2014 ======
+
+10.11.2014
+	Vybalení scintilátorů, očištění, přichycení vláken
+	
+11.11.2014
+	Nalepení vláken a práce na skriptu
+	
+12.11.2014 
+	Zabalení a začátek měření
+
+13.11.2014
+	Měření s pláty a práce na skriptech na zpracování dat
+
+14.11.2014
+	Části skriptu na zpracování dat z Dubny přesunuty do vlastí knihovny
+	Měření s Germaniovým detektorem na určení množství Gd v platech
+	Řezání, broušení a barvení vláken na celé tři pláty
+	Měření 6 plátů s různou koncentrací POPOP blízko vláknům
+
+15.11.2014
+	Založeny wiki stránky
+	Zpracovány internetové stránky o ROOTu ( ROOT:LocalROOTExamples  ) a Scientific Writing ( English:WritingScientificPaper )
+
+16.11.2014
+	Zpracovány data a zapsán o tom záznam do [[Diplomka:Dubna]] 
+	Upraveny Skripty na zpracování dat do finální podoby
+	
+17.11.2014
+	Příprava měření útlumu optických vláken (vrtání a přestavba)
+	Změna na neutronovém zdroji za Charkov
+	Změření útlumu bez zrcátka
+
+18.11.2014
+	Nalepení vláken do 3 50% POPOPů
+	Změření útlumu vláken se zrcátkem
+	Zjištění že měření útlumu jsou na prd
+
+19.11.2014
+	Zabalení 3 POPOPů, nalepení na konektor ze 3D tiskárny a navečer zapnuto měření k porovnání
+	
+20.11.2014
+	Zpracování výsledků
+	Měření vlivu různých zakončení vláken na sílu signálu.
+	Zapnuto měření logitudiálního útlumu na detektoru C
+	
+21.11.2014
+	Měření koncovek vlákna, přídán dovnitř scintilační detektor na zmenšení vlivu úhlové závislosti intenzity LED
+	Začít psát článek
+	
+24.11.2014
+	Zpracovány data z neutronu
+	Výpočet chyb
+	Článek
+	
+
+	

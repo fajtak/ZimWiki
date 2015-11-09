@@ -1,0 +1,70 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-01-08T14:18:02+01:00
+
+====== Scintilátory ======
+Created Čtvrtek 08 leden 2015
+
+Simulace pro hlubší pochopení procesů uvnitř scintilátorů různých rozměrů. Složení scintilátoru je : 
+	* H -> 0,525%
+	* C -> 0,475%
+vychází ze složení scintilátorů v Saint Gobain, kdy je poměr H:C = 1,105.
+
+==== 1. úkol ====
+	Simulace krychlových scintilátorů o rozměrech 1 nebo 3 cm. Simulováno pro plnou výšku, také pro poloviční a čtvrteční. Zdroj ^{60}Co
+
+		{{~/work/g4work/My/scintillatorEfficiency/pictures/co.png}}
+		{{./equation.png?type=equation}}
+	
+	Produkovány elektron o energii 0,31 MeV a dvě gamy o energiích 1,17 MeV a 1,33MeV s izotropním rozdělením.
+	Zdroj umístěn 10 cm od detektoru.
+	
+	{{~/work/g4work/My/scintillatorEfficiency/depEne.png?width=800}}
+	Zjištěno, že počáteční boule, která nebyla v experimentu vidět, je tvořena elektrony, které jsou v reálu minimálně částečně stíněny, a nevytváří tak jednoznačný signál.
+	
+Zdroj přiblížen na 1 cm od zdroje pro získání větší statistiky a zvětšení detektoru na 10 cm. Mezi zdroj a detektor vložen 5 mm hliníkový plát. Předtím :
+
+{{~/work/g4work/My/scintillatorEfficiency/experiment.png?width=800}}
+Potom :
+
+{{~/work/g4work/My/scintillatorEfficiency/experimentAl.png?width=800}}
+
+==== 2. úkol ====
+	Zjištěno, že Comptonovy hrany jsou jinde, než původní energie fotonů. To je ovšem v pořádku. Podle vzorce pro maximální zanechanou energii v jednom Comptonově rozptylu
+	
+	{{./equation001.png?type=equation}}
+	
+	zanechá foton o energii 1,17MeV v jednom COmptonově rozptylu maximálně 0,96MeV a foton o energii 1,33MeV zanechá maximálně 1,12MeV (v experimentu dochází k překrytí píku plného pohlcení méně energetické gamy a Comptonovy hrany více energetického fotonu).
+	
+==== 3. úkol ====
+	Kde jsou píky plného pohlcení? V menším rozměrech pod 10 cm není dostatek místa pro plné pohlcení (např. dva Comptony a fotoefekt). Pík plného pohlcení se začně projevovat až při větších rozměrech detektoru (např. 50 cm).
+	
+	Pro 100x100 mm
+	{{~/work/g4work/My/scintillatorEfficiency/100x100.png?width=800}}
+	a pro 500x500 mm
+	{{~/work/g4work/My/scintillatorEfficiency/500x500.png?width=800}}
+	Ve spektru vznikají však nové útvary kolem 1,25 MeV a . Čím to je?
+
+
+==== 4. úkol ====
+	Pro lepší pochopení posledního spektra byly generovány namísto rozpadu ^{60}Co pouze monoenergetické fotony s izotropním rozdělením.
+	Pro E_γ = 1,17 MeV a scintilátor o rozměrech 10 cm
+	{{~/work/g4work/My/scintillatorEfficiency/lowerGamma100.png?width=800}}
+	a rozměrech 50 cm
+	{{~/work/g4work/My/scintillatorEfficiency/lowerGamma500.png?width=800}}
+	Pro E_γ = 1,33 MeV a scintilátor o rozměrech 10 cm
+	{{~/work/g4work/My/scintillatorEfficiency/upperGamma100.png?width=800}}
+	a rozměrech 50 cm
+	{{~/work/g4work/My/scintillatorEfficiency/upperGamma500.png?width=800}}
+Ukazuje se, že při dostatečném zvětšení rozměrů má foton možnost provést ještě jeden Comptonův rozptyl, čímž vzniká velmi výrazný útvar podobný Comptonově hraně na energiích 1,125 MeV a 1,250 MeV pro nižší a vyšší energie fotonů. Také se stává mnohem výraznější pík plného pohlcení. 
+
+==== Dodatek A ====
+
+{{~/work/g4work/My/scintillatorEfficiency/pictures/scintillation.png?width=500}}
+
+==== Dodatek B ====
+
+{{file:///Data/MatFyz/diplomka/Theory/physics/sigma_gamma.png?width=800}}
+	
+
+

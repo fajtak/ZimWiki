@@ -1,0 +1,104 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-03-20T14:48:52+04:00
+
+====== Danssino ======
+Created Čtvrtek 20 březen 2014
+
+===== DANS =====
+	{{./pasted_image.png}}
+
+	* 3 Gw elektrárna Kalinin NPP, průměrná vzdálenost 11 m => tok ~5*10^13 neut/cm^2/s
+	* shielding - olovo, měď, borated polyethylene + muon veto
+	* basic element is scintillator strip (1x4x100 cm) with a thin Gd coaching - vyráběny koextruzí (nic moc) - hustota Gd ~1.6mg/cm^2
+
+	{{./pasted_image001.png}}
+
+	* sbě světla pomocí 3 WLS fibers Kurakay, průměr 1.2 mm, druhý konec vyleštěn a nanesena odrazivá vrstva
+	* Celkem 2500 stripů, 50 stripů na modul, každý z nich přiveden na PMT Hamamatsu R7600U-200
+
+===== DANSSINO =====
+	* rozměry 20x20x100 cm^3
+	* detekují ~ 70 IBD per day, S/B ~ 1
+	* 2 kanály - X (odd layers) and Y (even layers) PMT -> Simple front-end electronics(preamplifiers)
+	* teflon tube - calibrace modulů pomocí externích zářičů (137 Cs, 60 Co, 22 Na, 248 Cm)
+	
+	{{./pasted_image002.png}}
+
+* stínění - proti pozaďovým gamma a termálním neutronům + muon veto
+
+=== Elektronika ===
+	* QDC E_p a E_d pro x a y
+	* každý event obsahuje 4 energie (E_xp, E_yp, E_xd, E_yd) + čas mezi T_pd + info about muon veto
+	* Trigger - 2 možosti :
+		* zpět v čase (nutno vyvinout flash paměť ADC+ hodí se pro velký experiment) - lepší, detekujeme větší signál z neutronu
+			[ ] Porovnat síly signálů od neutronů a pozitronů @simulation 
+		* gate version - funguje pouze pod lower background count rate
+		{{./pasted_image005.png}}
+
+
+=== Measurements in lab ===
+	* měření s 137 Cs, 22 Na, and 60 Co γ -sources
+	* velmi malé počty p.e. (photoelectrons), využívá se Poissonova statistika, určována energie jednoho photoelektronu ε_{pe }(v našem případě 100keV/p.e.)
+
+		{{./pasted_image006.png}}
+
+	* zářič 248^Cm velice přesně odpovídá našim IBD (rozptyl neutronu na protonu (Prompt) a poté záchyt neutronu (Delayed)) - spektrum energií E_d stejné, E_p očekáváme jiné, analýza T_pd dala τ_m = 3us a τ_c = 24us, interakce od 248^Cm může být také způsobena detekcí hodně gamma (Prompt) z rozpadu 248^Cm
+		[ ] Pokusit se sehnat zářič 248^Cm @experiment
+		{{./pasted_image008.png}}
+	* zde je časové rozdělení T_pd jiné než u klasického IBD, dáno vyšší multiplicitou neutronů (k = 3)
+		{{./equation.png?type=equation}}
+	* 10 cm těžkého materiálu zastaví gamma a 10 cm CHB zastaví termální neutrony
+	* měřeno pozadí v laboratoři => 300 neutrino like events per hour (měli by být tvořeny převážně rychlými neutrony - stejné spektrum jako s 248^Cm, ale také gamma, muon a thermal neutrons )
+		[ ] Změřit pozadí v laboratoři a podívat se na počty neutrino like events @experiment
+	* pozadí z cosmiky ~ 10^2/m^2/s => je třeba 20 metrů vody na jeho potlačení
+
+=== Measurements under the reaktor ===
+	* 11m od WWER-1000 (water cooled and moderated) thermal power 3GW, umístěno pod detektorem => dokonalé stínění (50 m w. e.) - odstíní rychlé cosmické neutrony, 6x menší pozadí od muonů, gamma pozadí je lehce vyšší (nejspíš kvůli 40^K)
+	* termální neutrony prochází z reaktoru zkrze zdi a také zvyšují pozadí  (zastaví 10 cm CHB) -> stejně by neměli způsobovat IBD pattern
+		[ ] Rozmyslet si vytvoření stínění @experiment 
+
+		{{./pasted_image009.png}}
+
+	* data byla analyzována za podmínek
+		* T_pd ∈ (1.5 - 30)us
+		* X_d + Y_d s Exd+Eyd = E_d ∈ (1 - 8) MeV
+		* Exp + Eyp = E_p ∈ (1 - 7) MeV //neutrino o energii 1.8MeV vytvoří pozitron s energií 0, Maximální energie neutrina je přibližně 10 MeV => podmínka na energii E_p, možná by se dalo použít i (1 - 8) MeV
+	* **VYVAROVAT SE** - použití těžkých materiálů v blízkosti detektoru bez dalšího CHB stínění
+		* 5 cm mědi => 2x více neutrino like events
+		* 10 cm olovo => 4x více neutrino like events
+		* měď sice zvyšuje pozadí, ale na druhou stranu vrací neutrony zpět do detektoru (~ +10% efficiency to detect IBD)
+			[ ] Vyzkoušet měděné stínění a zjistit tak změnu efektivity detekce IBD @simulation
+
+		{{./pasted_image010.png}}
+
+	* Určení pozadí při vypnutí detektoru => Možnost určit S/B ratio
+		[ ] Nasimulovat odpovídající počet detekovaných událostí za den a pozovnat s měřením @simulation
+		[ ] Nasimulovat energetické spektrum e+ a porovnat s daty @simulation 
+	* Výsledky
+		* různé energetické thresholdy
+		* Závěry :
+			* intenzita událostí způsobených muony se neliší při zapnutém a vypnutém reaktoru
+			* 5 cm mědi v blízkosti detektoru zvyšuje pozadí o 70%, ale zlepšuje efektivitu
+			* podmínka X ^ Y je silnější a poskytuje lepší S/B ratio - vylučuje pozaďové eventy způsobené recoiem protonu a detekcí neutronu
+				[ ] Nasimulovat dolet protonu v detektoru a v kolika procentech zasáhne dva pláty nad sebou @simulation
+			* snižování energetického prahu na Prompt signál nepřináší větší statistiku, ale přidává backgroung -> horší S/B ratio
+			{{./pasted_image011.png}}
+
+			* energetická spektra pozitronů pro zapnutý a vypnutý reaktor
+
+			{{./pasted_image012.png}}
+			* Odečtením dvou křivek výše dostaneme  detekované energetické spektrum, dává smysl pro podmínku X^Ym pro X+Y je spodní část spektra znečištěa náhodnými koincidencemi gamma
+			{{./pasted_image013.png}}
+
+
+=== Summary ===
+	* i přes špatné rozměry, S/B ration rovno 1 a účinnost někde kolem 10% (souhlas s MC)
+		[ ] Nasimulovat účinnost malého detektoru i velkého @simulation 
+	* vyvarovat se používání těžkých materiálů ve stínění
+
+==== Oscilace ====
+	* posouvání detektoru v rozmezí 9.7 do 12.2 m od reaktoru
+	* reaktorová anomalie - antineutrino oscillations to sterile neutrinos
+
+{{./pasted_image014.png}}

@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-02-05T15:47:36+01:00
+
+====== únor 2015 ======
+
+5.2.2015
+	Velký pokrok se simulacemi
+	Prezentace na RANUS
+	Oprava grafu optimálních koncentrací pTP a POPOP
+

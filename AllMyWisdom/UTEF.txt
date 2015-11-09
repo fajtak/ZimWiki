@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-01-08T14:17:03+01:00
+
+====== UTEF ======
+Created Čtvrtek 08 leden 2015
+
+==== Simulace ====
+* [[UTEF:Scintilátory|Scintilátory]] - Petr a Petr

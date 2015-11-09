@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-12-13T00:10:28+04:00
+
+====== prosinec 2014 ======
+
+12.12.2014
+	Obalové materiály - různé tyveky
+	Gd - fólie a papíry různých koncentrací
+
+13.12.2014
+	Zprovozněny simulace a obarvení zasažených platů -> moc hezký
+	Staženy data z Gd
+	Měření obalových materiálů - bare, tyvek, teflon
+	
+14.12.2014
+	Měření obalových materiálů - tyvek_rhl (dobře zabaleno), barva Envinetu
+	

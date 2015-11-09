@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-12-13T00:09:32+04:00
+
+====== NutnoUdelat ======
+Created Sobota 13 prosinec 2014
+
+[*] prepsat ukladani do TTree jako jeden class, který se uloží, pak se dá načíst a zpracovávat ???
+
+Neutron
+[*] počet interakcí neutronu před záchytem
+[*] záchyt na čem? Gd nebo proton?
+[*] vzdálenost neutronu jak dráhy tak od interakčního bodu
+[*] Multiplicita zásahů
+[*] zkontrolovat pokud vyleti ze sveta da outOfWorld = 1
+[*] počáteční energie neutronu
+
+Pozitron
+[*] počáteční energie
+[*] vzdálenosti jak tracku tak od interakčního bodu
+[*] multiplicita
+[ ] energie zanechaná v mrtvé vrstvě
+
+Track
+[ ] záchyt gam z pozitronu
+	[*] vzdálenost do první interakce
+	[*] energie zanechaná v první interakci
+	[*] zbylá deponovaná energie
+	[ ] multiplicita
+[ ] záchyt gam z neutronu
+[ ] jaké energie vidíme
+[*] rozdíly časů
+Vsechno
+[ ] zkontrolovat jak je to s totalEnergyDeposited a ionizingEnergyDeposited

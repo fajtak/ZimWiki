@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-11-15T23:46:13+01:00
+
+====== Simulace ======
+Created Sobota 15 listopad 2014
+
+Simulace událostí
+	1. Složení jádra v čase
+		a. 235U
+		b. 238U
+		c. 239Pu
+		d. 241Pu
+	2. Neutrinová spectra z jednotlivých prvků
+	3. Úhlové a energetické rozdělení neutronů 
+
+		[[file:///Data/MatFyz/diplomka/Theory/IBDangularDist/0701029.pdf|Daya Bay work]]
+		
+		{{file:///Data/MatFyz/diplomka/Pictures/neutronAng%26EneSpect.png}}
+
+	4. Úhlové a energetické rozdělení pozitronů 
+
+Fyzika
+	1. Problém s nKiller procesem
+	2. Jak generovat události? -> náhodně po objemu, nutné dopočítat úhel příletu neutrina (směr neutronu) 
+

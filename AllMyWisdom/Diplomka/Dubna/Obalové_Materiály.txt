@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-12-04T16:26:27+01:00
+
+====== Obalové Materiály ======
+Created Čtvrtek 04 prosinec 2014
+
+==== Měření obalových materiálů ====
+
+=== 1) Já a Mária ===
+
+=== a ===
+{{file:///Data/MatFyz/diplomka/Photos/Photos_Dec2014/20141209_105508.jpg?width=800}}
+{{file:///Data/MatFyz/diplomka/Photos/Photos_Dec2014/20141212_094034.jpg?width=800}}
+
+4 polohy trigrovacích scintilátorů -> víc nám nebylo dovoleno
+1 plát s lepšími vlákny (Kuraray) jako referenční (3 dvojice trigerů)
+
+{{file:///Data/MatFyz/diplomka/Results/wrapings.png?width=1200}}
+
+
+
+=== 2) FADAHAT ===
+
+Referenční signál v průběhu měření upadal -> Nutná korekce
+V Mylar file je jiná konvence zavedení Kalabášek
+Nejlepší Tyvek a Teflon
+
+{{file:///Data/MatFyz/diplomka/Experiment/DataDubna/wraping/fadahat/P_20141125_111901_LL.jpg?width=800}}
+
+{{file:///Data/MatFyz/diplomka/Experiment/DataDubna/wraping/fadahat/Clipboard01x.jpg}}
+
+===== Results =====
+
+{{file:///Data/MatFyz/diplomka/Results/wraping.png}}
+	[*] Změřit různé materiály jako odrazové vrstvy @Dubna  

@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-03-26T19:34:34+01:00
+
+====== PANDA ======
+Created Středa 26 březen 2014
+
+* mobilní detektor z plasického scintilátoru
+* tyče scintilátoru o rozměrech 10 x 10 x 100 cm obaleny aluminized mylar films and gadolinium coated Mylar films
+	{{./pasted_image.png}}
+
+* scintilátory Rexon RP-408, Gadolinium films vyrobeny Ask Sanshin Engineering, Hamamatsu H6410 (R329-02) PMTs
+* určování polohy zásahu v jednotlivých tyčích v závislosti na podílu intenzity detekovaných fotonů na obou koncích tyče
+
+* studovali nejlepší možnou variantu použití gadolinia (simulacemi) - 10keV neutron v nekonečném scintilátoru ! pozor. Může se zachytit i na vodíku (pro nás naprd)
+	* rozpustit Gd v scintilátoru - dobré výsledky, ale problém s kvalitou scintilátoru
+	* umístit folii mezi pláty
+	* obalit jednotlivé tyče
+	[ ] vyzkoušet nejlepší možnou variantu použití Gd (prášek v scint, film, proložit plíšky) - jak účinnost záchytu tak doba záchytu @simulation 
+	[ ] otestovat kvalitu scintilátoru v případě Gd rozpuštěného v scintilátoru, nebo v obalové barv. @experiment
+
+	{{./pasted_image001.png}}
+* prozatím sestrojen detektoru Lesser PANDA (4x4) tyče
+* nasimulované spektrum
+
+	{{./pasted_image002.png}}
+* výpočet počtu antineutrino událostí na jeden MeV v detektoru za čas T z i-tého izotopu dle rovnice 
+		{{./equation001.png?type=equation}}
+kde i běží přes 4 hlavní izotopy, N_p je počet protonů v jádře, D je vzdálenost od detektoru do centra jádra, sigma a phi jsou účinný průřez IBD a antineutrino number density na MeV. Pro 1m^3 ve vdálenosti 30m se předpokládá 2.3x10^3 událostí za den pro 3GWt elektrárnu
+* simulaovali IBD homogenně po celém detektoru a sledovali odezvu detektoru. Energie simulovali dle spektra výše a ůhlové rozdělení z práce Vogel a Beacom

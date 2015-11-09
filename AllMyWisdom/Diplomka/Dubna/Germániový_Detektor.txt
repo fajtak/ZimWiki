@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-12-04T16:48:32+01:00
+
+====== Germániový Detektor ======
+Created Čtvrtek 04 prosinec 2014
+
+Použit na změření dostatečného množství Gd v plátech
+AmBe zdroj naznáme intenzity. Stíněn borovaných polyethylenem. Rychlé neutrony mderovány vodou v kanystrech. Poté na plát a pak detekován v Germaniovém detektoru.
+
+Germaniový detektor o objemu kolem 50-100cm^3.
+Je zde vidět velké množtví píků z okolí (K, Ra, Ur řady, Th).
+Pík na 511 keV je širší než všechny ostatní (asi 2x). Je to z důvodu vzniku vázaného stavu pozitronia, které se pak rozpadá s nějakým momentem. 
+Jinak šířka píku se lyší s energií.
+ Nejsou zde vidět Comptonovy hrany.
+ Je zde vidět otočená Comptonova hrana = reakce na jádrech Ge (n, γ ) neelastický. Jistou energii dostává Ge jako recoil.
+Velké zastoupení SEP (Single Escape Peaks) a DEP (Double Escape Peaks) -> lze usuzovat na velikost detektoru.
+
+Elektronika : signál do zesilovače -> ADC -> vyčítáno do PC.
+
+Meření náš plát, 5 stripů z Charkova a satmotný náš plát bez Gd. Po 1000s expozici jsou již vidět velké rozdíly. Náš plát nechán na proměření po dobu 2 dní (víkend).
+
+{{file:///Data/MatFyz/diplomka/skripts/results/gerDet.png}}
+
+{{file:///Data/MatFyz/diplomka/Theory/neutronCapture/gdIsotopes.jpg}}
+
+{{file:///Data/MatFyz/diplomka/Theory/neutronCapture/gd157lines.jpg}}
+
+{{file:///Data/MatFyz/diplomka/Theory/neutronCapture/graphLines.jpg}}
+{{file:///Data/MatFyz/diplomka/Theory/neutronCapture/graphLinesHE.jpg}}
+ 

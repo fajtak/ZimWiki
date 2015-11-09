@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-12-04T16:42:49+01:00
+
+====== Útlum ve vláknu ======
+Created Čtvrtek 04 prosinec 2014
+
+Proměřit vliv útlumu světla ve vláknu pro náš rozměr 40 cm. Svícení jak z konce tak z boku. Z boku prozkoumání vlivu zrcadýlka.
+
+[*] Proměřit útlum signálu ve vláknu a vliv zrcadýlka na konci vlákna @Dubna 
+
+Útlum bez zrcátka na konci -> Atenuation length = 369.685 cm
+{{file:///Data/MatFyz/diplomka/skripts/results/fibAten1.gif}}
+
+Útlum se zrcátkem na konci -> !!! Odrazy na zrcátku nebrány v potaz. MOC MALÉ OKNO NA GATE!!!	
+Atenuation length = 341.896 cm
+
+{{file:///Data/MatFyz/diplomka/skripts/results/fibAten2.gif}}
