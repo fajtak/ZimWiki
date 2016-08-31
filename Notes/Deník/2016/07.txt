@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-07T13:53:16+02:00
+
+====== červenec 2016 ======
+
+1-15/7 - tábor
+18/7 - zpracování nových dat 2016 timeCal z Bajkalu + úprava skriptů
+19/7 - zpracování nových dat 2016 timeCal z Bajkalu + úprava skriptů + lepení vláken do 1,5 a 2 cm desky
+20/7 -  zpracování nových dat 2016 timeCal z Bajkalu + úprava skriptů
+21/7 - Slovensko (studium + tříměsíční pobyt Dubna)
+22/7 - Slovensko (studium + tříměsíční pobyt Dubna)
+25/7 - programování timeCal na Bajkal + vyúčtování za Slovensko
+26/7 - studium svn a c++
+27/7 - vyplňování papírů na tříměsíční pobyt v Dubně, práce na Bajkalských datech 2016 (zadávání délek kabelů a opětovné zpracování všech dat), loučení s Joshym
+28/7 - komunikace s Fedorem + překlad studie proveditelnosti
+29/7 - práce na skriptu po GVD

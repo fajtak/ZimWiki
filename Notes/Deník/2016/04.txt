@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-04-04T15:13:48+02:00
+
+====== duben 2016 ======
+
+1/4 - dopoledne zpracování dat pro Umuta a zaslání výsledků z podélných a příčných měření také diskuze s Petrem o získaných výsledcích, odpoledne práce na simulacích pro Bobkovou na patent ohledně koncentrace Gd, Hanka v Kralupech doměřila druhou polovinu příčného skenu
+4/4 - Kralupy, měření 2% ps desky s třemi vlákny po přemístění SiPM číslo 2 na levé vlákno při pohledu na čelo desky, simulace pro Bobkovou (zavedení parametru kappa)
+5/4 - Kralupy, doměření 2% ps desky s třemi vlákny a SiPM číslo dvě nalevo, dokončení simulací pro Bobkovou a vytvoření grafů s účinností detekce Gd [[SCube:Gd koncentrace patent]] 
+6/4 - Zpracování výsledků z měření v Kralupech
+7/4 - Zpracování výsledků z měření v Kralupech (podélné a příčné skeny a další různá měření) :MuonVeto:ElectronSource, měření tloušťky scintilátorů na SCube [[:SCube:Tloustka_Desek]]
+8/4 -
+11/4 - Zpracování dat deltaT z UTEFu
+12/4 - Zpracování dat deltaT z UTEFu
+13/4 - Zpracování dat deltaT z UTEFu
+14/4 - Měření kalibrací fotonásobičů (sestavení aparatury) file:///Data/MatFyz/diplomka/Experiment/pmtCal
+15/4 - Měření kalibrací fotonásobičů (počty p.e.) - skript file:///Data/MatFyz/diplomka/skripts/pmtCal.C
+18/4 - Měření Kralupy (porovnání STD a IMP desek)
+19/4 - Měření Kralupy (porovnání STD a IMP desek)
+20/4 - dopoledne Kralupy, odpoledne skype meeting s Umutem
+21/4 - nemoc
+22/4 - dodělání skriptu na kalibraci fotonásobiče file:///Data/Matfyz/diplomka/skripts/pmtCalVer2.C 
+25/4 - problémy se zápěstím, návštěva nemocnice, učení na zkoušku z detektorů1
+26/4 - problémy se zápěstím, návštěva nemocnice, učení na zkoušku z detektorů
+27/4 - stále práce na skriptu na kalibraci fotonásobiče, registrace na konferenci Three Messengers, začátek měření závislosti kalibraci fotonásobiče na HV
+28/4 - měření závislosti kalibrace na HV a na délce světelného pulsu file:///Data/MatFyz/diplomka/Results/PMTcalib/timeScanPol2.ps file:///Data/MatFyz/diplomka/Results/PMTcalib/HVScanRes.ps
+29/4 - problémy se zápěstím, návštěva nemocnice
+
+

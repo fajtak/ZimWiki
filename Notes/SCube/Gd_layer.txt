@@ -4,3 +4,40 @@ Creation-Date: 2015-11-09T12:06:43+01:00
 
 ====== Gd layer ======
 Created Pondělí 09 listopad 2015
+
+Měření na Van De Grafu s Tomášem, Mariou, Mirem, Jankem a Joshym provedené 2/11/2015.
+Oproti poslednímu měření mnohem větší zesílení, aby byl pík okolo 182 keV pokryt více body.
+Kalibraci jsme nedělali, ale šlo by z 182keV, 511, a dalších -> není důležité pro analýzu.
+
+{{file:///Data/MatFyz/diplomka/Photos/VanDeGraf/IMAG1029.jpg?width=200}} {{file:///Data/MatFyz/diplomka/Photos/VanDeGraf/IMAG1030.jpg?width=200}}
+
+Měřeno 11 různých vyriant po dobu 1800s -> data v file:///Data/MatFyz/diplomka/Experiment/VanDeGraf/20151102
+* Stripy
+* pozadí
+* Staré folie
+* Envinet barva
+* ubrousek 1.5GdO
+* ubrousek 2.0GdO 2x
+* ubrousek 1.5GdCl
+* ubrousek 2.0GdCl
+* Nové folie
+* Nové folie 2 vrstvy
+
+Data zpracována skriptem file:///Data/MatFyz/diplomka/skripts/neutronCRAmplified.C
+
+Výsledky zde file:///Data/MatFyz/diplomka/Results/GdCR.pdf
+
+{{file:///Data/MatFyz/diplomka/Results/GdCR.png?width=1000}}
+{{file:///Data/MatFyz/diplomka/Results/GdCRZoom.png?width=1000}}
+
+Zajímavé!!! 
+* stará folie horší než nová (opatrná manipulace)
+* dvě měření při otočení desek se shodují v rámci chyby
+* Oxid obecně lepší než chlorid i když není tak homogenní
+* 2 vrstvy folii budou pro nás více než dobré
+
+==== Měření množství Gd na folii ====
+Maruška zvážila, že na jedne izolepě (4.8cm x 40 cm) je 162 mg Gd -> na jednu desku to znamená 648 mg Gd, ale my potřebujeme o trochu víc. Tak 1 g by mohl být optimální (810mg při exptrapolaci, ale není úplně lineární).
+
+==== Výroba Gd folie z Envinetu ====
+Pan Pjatkan říká, že by fólie mohla být 0,2mm tlustá a až 10 cm široká -> 8cm^3, LDPE (low density polyethylene) má hustotu v rozmezí 0,910-0,940 g/cm^3. To znamená přibližně 8 g na jednu folii a my tam potřebujeme 0.5g (půlka desky). To znamená že stačí smíchat 1:16 nebo-li 5.5%.

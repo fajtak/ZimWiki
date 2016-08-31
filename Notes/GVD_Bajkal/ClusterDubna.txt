@@ -1,0 +1,48 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-02-03T15:06:51+01:00
+
+====== ClusterDubna ======
+Created Středa 03 únor 2016
+
+Započal měření v Dubna 2015. 192 optických modulů na 8-mi 345 metrů dlouhých vláknech vzdálených od sebe 40m (prozatím pro snížení energetického thresholdu pro atmosférické miony pro kalibraci) + akustický poziční systém. Navíc jeden string pro zařízení zajišťující kalibraci a měření vody. 
+
+{{../pictures/clusterDubna.png?width=650}}
+
+Každý string má na sobě 24 OM po 15 metrech a pokrývá hloubky 900 až 1250 m pod hladinou.
+
+Sekce je základní detekční element detektoru GVD. Každá obsahuje 12 optických modulů (OM) a centrální modul (CeM).
+
+Základní funkce OM
+* detekce částic
+* tvarování výstupního analogového signálu pro přenos do ADC board
+* kontrola PMT
+* kalibrace a monitoring parametrů OM
+
+Složení OM
+* tlaku odolná skleněná sféra 43.2 cm v průměru
+* klec pro stínění magnetického pole země
+* PMT R7081-100 s 10" polosférickou katodou -> QE ~ 35%
+* HV power supply unit
+* rychlý dvoukanálový předzesilovač
+* kontroler -> ovládání HV, monitorování šumu a pro kalibrace
+* dvě LED pro časovou a amplitudovou kalibraci
+
+Signály z OM jsou vedeny 90m koaxiálním kabelem do CeM, kde jsou digitizovány na zakázku vyráběným 12-kanálovým ADC s 200 MHz frekvencí.
+Slow-control board v CeM zajišťuje komunikaci s OM pomocí RS-485 sběrnice a zajišťuje power control (On/Off každého OM).
+ADC board zajišťuje trigrovací logiku, vyčítání dat, digitální zpracování a propojení pomocí Ethernetu do Cluster DAQ centra, kontrolu fungování dané sekce a logiku trigrování sekce.
+Request analyzer vytváří požadavek sekčního trigeru na základě trigrů jednotlivých kanálů -> L (0.3 p.e.) a H (3 p.e.).
+Tato jednotka obsahuje programovatelnou coincidenční matici (12Hx12L), která poskytuje jednoduchý způsob jak generovat sekční triger.
+Dva základní trigrovací módy:
+* koincidence >N L-trigrů ve zvolitelném časovém okně
+* koincidence L a N trigerů od sousedních OM v sekci.
+
+Požadavek na sekční triger je poslána skrz Master Board skrz komunikační modul vlákna (CoM) do DAQ centra, kde globální triger pro všechny sekce je vygenerován.
+Data z vláken jsou přenesena pomocí DSL modem ethernet kanál do cluster centra.
+Přenos dat z clustr DAQ centra do obřežní stanice je zajištěn optickým kabelem (6 km).
+
+Od dubna do června 2015bylo nasbíráno 1.7 * 10^8 eventů.
+Detekce neutrin je založena na výběru kaskádních eventů v objemu detektoru. Eventy s multiplicitou N > 20 jsou považovány za vysokoenergetické neutrina.
+Shower effective volume pro GVD*4 je okolo 0.4 - 2.4 km^3 pro energie větší než 10TeV (při podmínce 11/3 - minimálně 11 zasáhnutých OM na minimálně 3 stringách). Určení energie je okolo 20-35% a určení polohy 4°.
+Počet pozadí (atmosferická neutrina) v energiích větších než 100 TeV je významně potlačen = 1 event/year od všech flavorů. 
+

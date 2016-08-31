@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-11-09T16:52:25+01:00
+
+====== Programs ======
+Created Pondělí 09 listopad 2015
+

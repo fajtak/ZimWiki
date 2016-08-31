@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-02-01T15:39:43+01:00
+
+====== únor 2016 ======
+
+1/2 - procházení poslední verze posteru, žádost na cesťák do Irkutsku
+12/2 - návrat z Ruska
+14/2 - 21/2 - Polsko konference
+22/2 - dopolko procházení kódu BARS, odpolko diskuze s Petrem, a zpracování dat pro SCube
+23/2 - dopolko zpracování dat pro SCube, odpolko simulace pro Petra ohledně šíření světla v Mionovém vetu, rešerše o vyhořelém jaderném palivu
+24/2 - dopolko simulace pro Petra. Úprava skriptu singalRec.C, aby ukazoval statistiky rozdílů časů.
+25/2 - odjezd na Bajkal
+26/2 - Bajkal
+27/2 - Bajkal
+28/2 - Bajkal
+29/2 - Bajkal

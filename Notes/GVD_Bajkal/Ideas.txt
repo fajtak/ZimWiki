@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-02-23T15:01:33+01:00
+
+====== Ideas ======
+Created Úterý 23 únor 2016
+
+Vliv slunce na úroveň pozadí
+Monte Carlo na NC interakce pro rozpoznávání typů neutrin

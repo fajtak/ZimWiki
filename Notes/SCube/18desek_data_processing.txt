@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-31T15:35:58+02:00
+
+====== 18desek data processing ======
+Created Středa 31 srpen 2016
+
+Dva kanály. Potřeba udělat časovou korekci dvou asynchronních zařízení. Jedno zařízení je vůči druhému nejenom časově posunuté (z důvodu nevylunování hodin a z důvodu jiného času zapnutí), ale ještě jeho interní hodiny tikají při jiné frakvenci. Viz obrázek uprostřed. Detekce dvou eventů v 1. sekundě a v druhé a to jak je dvě různá zařízení s dvěma různými frekvencemi zachytí. Na prvním zařízení budou mít eventy časy 4 a 8 a na druhém zařízení to budou časy 3 a 8.
+
+{{../../Pictures/IMG_20160831_203928.jpg?width=800}}
+
+Zajímavá veličina, kterou studuji, a která mi může pomoct to celé opravit je (t_(shift) = t_1 - t_2) vs t_1, přičemž t_1 je čas události na prvním zařízení a t_2 je její čas na druhém zařízení. Jenom si musím být jistý, že studuju časy pro jednu a tu samou událost detekovanou v obou zařízeních, ale to mám pořešeno vyhledáváním pomocí časových rozestupů. Pokud by byli stejné frekvence, tak by rozestup mezi událostmi byl konstantní, ale tak tomu není. Druhé zařízení vykazuje vyšší frekvenci a tím pádem se časový rozestup t_(shift) neustále zmenšuje, neboť, jak t_2 rychleji tiká, tak za stejný časový okamžik udělá víc tiků a tím pádem, když ho odečítám, tak dostávám meší a menší číslo. Viz následující obrázek, kde je zobrazen t_1 (x-ová osa) vs t_shift (y-oná osa).
+{{../../Pictures/tshiftvst1.png?width=800}}
+Na základě předchozího obrázku může udělat fit a to mi dá korekci k frekvenci druhého zařízení. Nutno podotknout, že zde ke kalibraci použita data za 10 s.
+
+Najitá korekce nám dá jak časový posun, tak korekci k frekvenci. V tomto případě:
+
+delta_t = 2.2732 s
+delta_f = -4.0948 * 10^-6. 
+
+To znamená, že druhé zařízení se rozchází na jeden bin (10^-8 s) o 4.0948 * 10^-6 binů -> nepřesnost asi 4ppm (v rámci mezí, který mi Petr řekl = 50ppm). To znamená, že po 1000 vteřinách ( approx 1/3 hodiny) se nám bez korekce data budou rozcházet o 4 milisekundy a po 1000 000 s (= 10 dní) až o 4 s. Velký problém.
+
+V tuto chvíli můžu aplikovat získanou korekci na data a sledovat co se stane s předcházejícím obrázkem. Viz další obrázek
+
+{{../../Pictures/tshiftvst1calibrated.png?width=800}}
+Můžeme si všimnout, že již zde není žádná časová závislost jako v předchozím grafu a zároveň je celá závislost krásně vycentrována na nulu. Maximální rozestupy jsou ± 10 binů = 100 ns. V tomto místě jsem nadšený a napsal jsem e-mail Petrovi, že to všechno funguje a že jakože krása. Drobné variace v posledním obrázku jsem si vysvětloval tak, že to může být dáno různými energiemi detekovaných událostí (tzv. time walk correction) -> Ale není to tak.
+
+No a zde nastává problém. Tak jsem se teda rozhodl, že když už mám kalibraci, tak, že načtu i další soubory ne jenom první a pokusím se danou kalibraci aplikovat na výrazně větší časové úseky a budu doufat, že to zůstane stejně krásný jako, když jsem zpracovával data z 10s. No a ono prd. Viz následující obrázky, které zobrazují to samé jako ty dva předchozí jenom na delší časové škále.
+{{../../Pictures/tshiftvst1calibratedLongerTime.png?width=800}}
+Tady je vidět, že na časový škále 10 000 sekund to již plave i o víc jak 10 000 binů neboli 100 mikrosekund. A to jenom proto, že to pro větší hodnoty nemám zobrazený. Co je na tom nejhorší je, že jsou tam střídavě vidět jasný trendy nahoru a dolu, což znamená, že ta frekvence toho zařízení není stálá, ale osciluje, s tím, že po nějaký době to převáží výrazně víc na jednu stranu a uteče to z rozsahu a to po třech hodinách měření (Nedej bože po dni).
+
+Pokusím se zamyslet nad tou adaptivní kalibrací, ale už i tohole je docela osina v zadku. Ještě si k tomu představit 8 zařízení najednou. To bude švandy kopec. 
+

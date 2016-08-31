@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-05-10T14:49:52+02:00
+
+====== DataDownload ======
+Created Úterý 10 květen 2016
+
+ssh baikal@baikal-fs.jinr.ru:/data1/baikal/archive_data_[year]/main_cluster_[year]/data. Пароль BAIKAL((
+scp baikal@baikal-fs.jinr.ru:/data1/baikal/archive_data_[year]/main_cluster_[year]/data/[a-z]0NNN.* .. Пароль тот же.
+
+use root bmerpp.C in BARS/trunk/macros
+results in  BARS/trunk/macros/OUT

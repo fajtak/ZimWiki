@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-02-22T11:40:34+01:00
+
+====== Notes ======
+Created Pondělí 22 únor 2016
+
+Run e0556 - muon run 1 day
+
+tisk:
+	baikal@baikalsnr.jinr.ru
+	pass: BAIKAL((
+	
+	lpr -P HP_Color_LaserJ
+	
+	lpstat -p
+
+sci-hub.io
+

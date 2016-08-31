@@ -5,6 +5,9 @@ Creation-Date: 2015-10-20T14:13:32+02:00
 ====== Git ======
 Created Úterý 20 říjen 2015
 
+===== Jak stahovat na Halovi a Rexovi =====
+git clone git://github.com/fajtak/S3Plate.git
+
 Data - stream of snapshots
 
 ====== The Three states ======
@@ -66,8 +69,7 @@ To remove from Git but keep in the working folder - **git rm --cached file_name*
 To show history of commits - **git log**
 To show the difference in each commit - **git log -p**
 
-===== Jak stahovat na Halovi a Rexovi =====
-git clone git://github.com/fajtak/S3Plate.git
+
 
 
 

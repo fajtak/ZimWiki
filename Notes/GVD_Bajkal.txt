@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-01-28T14:57:13+01:00
+
+====== GVD Bajkal ======
+Created Čtvrtek 28 leden 2016
+
+[[+ClusterDubna]] 
++DataAcquisition 
+[[+SVN]]
+
+
+[[+OstatniExperimenty]] 
+[[+ExperimentGVD]]
+[[+People]] 
+[[+Notes]] 
+[[+Ideas]] 
+
+IP adress 192.168.5.16 - lokálně
+		91.185.39.10 - vzdáleně, port 9916
+		
+IP adressy masterů 192.168.1.190 - 192.168.1.206
+
+baikal.jinr.ru/wiki
+

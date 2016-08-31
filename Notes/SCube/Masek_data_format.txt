@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-25T21:13:55+02:00
+
+====== Masek data format ======
+Created Čtvrtek 25 srpen 2016
+
+zápis je LSByte first
+
+fputc((*ev).index, evevFile);  //1 byte
+fwrite(&((*ev).timestamp),6,1, evevFile);
+fwrite(&((*ev).LLDtime)2,1,evevFile);
+fwrite(&((*ev).length),2,1, evevFile);
+unsignned short sh;
+for(int i = 0; i < (*ev).length; i++){
+	sh = (*ev).points[i];
+	fwrite(&sh,2,1,evevFile);
+}
+
+how to open binary file 
+	xxd -b file
+how to open binary file in hex format 
+	xxd file
+Nice combination
+	xxd file > output.txt
+	
+14,941542*e9 41,503926*e9 -> Rozdil 26,562384*e9
+14,714283*e9 41,276779*e9 -> Rozdil 26,562496*e9
+	

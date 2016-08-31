@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-05-05T15:56:08+02:00
+
+====== květen 2016 ======
+
+2/5 - Bajkal kalibrační software, začal jsem znovu s přepisem, nyní timeCal.C skript file:///home/fajtak/work/BARS/trunk/macros/time_calib/timeCal.C
+3/5 - problémy s rukou, nemocnice, přednáška IoT
+4/5 - Bajkal kalibrační software
+5/5 - Měření v Kralupech, kolik energie je ztraceno v Gd vrstvách a kolik v teflonové vrstvě
+6/5 - zpracování dat z Kralup, Prezentace SCube pro Slováky, cesta do Kralup pro mionové veto, lepení prvních vláken do mionového veta
+9/5 - cesta na Slovensko převzetí Grantu
+10/5 - práce na Bajkal kalibrační software, lepení vlákna do scintilátoru (mionové veto)
+11/5 - dopoledne cesta do Kralup s Máriou na měření světelného výtěžku s různými vrstvami teflonu, odpoledne práce na kalibračním softwaru
+12/5 - měření Kralupy podélný a příčný scan muonového veta, výsledky Rasťo
+13/5 - měření Kralupy podélný a příčný scan muonového veta, výsledky Rasťo
+16/5 - měření Kralupy podélný a příčný scan muonového veta, výsledky Rasťo
+17/5 - měření Kralupy podélný a příčný scan muonového veta, výsledky Rasťo
+18/5 - měření Kralupy podélný a příčný scan muonového veta, výsledky Rasťo
+19/5 - měření Kralupy podélný a příčný scan muonového veta, výsledky Rasťo
+20/5 - měření Kralupy podélný a příčný scan muonového veta, výsledky Rasťo
+23/5 - učení na zkoušku z detektorů a oslava mých narozenin
+24/5 - měření Kralupy podélný a příčný scan muonového veta, výsledky Rasťo
+25/5 - dopoledne učení na zkoušku z detektorů, odpoledne software na porovnání detekční účinnosti PMT a MPPC file:///home/fajtak/MatFyz/diplomka/skripts/mppcVsPmt.C 
+26/5 - učení na zkoušku doma
+27/5 - učení na zkoušku doma
+30/5 - zkouška na Slovensku (detektory)
+

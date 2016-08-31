@@ -1,0 +1,35 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-02-11T11:56:58+01:00
+
+====== ExperimentGVD ======
+Created Čtvrtek 11 únor 2016
+
+= deep underwater muon and neutrino detector in the Baikal Lake
+
+výhoda - vysoká modulárnost, možnost fungování každého clusteru samostatně, ale oni s nimi můžou libovolně hýbat dle potřeby.
+
+Hlavní cíle 	- studování astrofyzikálních neutrin (toky, umístění apod.), a studování mapy vysokoenegetických neutrin na Jižní polokouli (obsahuje galaktické centrum).
+		- studování rozpadu temné hmoty ve slunci nebo v zemi
+* neutrina z lokálních astrofyzikálních objektů (galaktických) a vzdálených objektů (extragalaktických)
+	- neutrina jsou produkávána v objektech, kde je uvolněno neuvěřitelné množství energie
+	- nejbližší zdroje, které jsou v tuto chvíli uvažovány jako schopné produkce takto energetických neutrin (pozůstatky supernov, pulzary, okolí černé díry Sgr A v galaktickém centru, binární systémy obsahující neutronové hvězdy a černé díry, klastry molekulárních mračen = toto vše jsou galaktické zdroje) jsou lokalizovány poblíž galaktického centra a galaktické roviny. Energie z takovýchto zdrojů jsou odhadovány v rozmezí 10^3 - 13^6 GeV
+	 - naopak extragalaktické zdroje (aktivní galaktická jádra (AGN), gamma záblesky (GRB), klustry galaxií) poskytují výrazně větší energie 10^4 - 10^8 GeV
+	- hledání zdrojů vyžaduje přísné požadavky na rekonstrukci příchozích směrů 
+* diffuse neutrino flux
+	- studování energetického spektra, globální anizotropie, neutrino flavour composition z neidentifikovaných zdrojů neutrin s energiemi většími než 10^4 GeV (pozadí v podobě atmosférických neutrin by mělo být srovnatelné nebo menší než předpokládaný tok).
+	- produkce neutrin převážně v pp a pgama interakcích a následných rozpadech nabitých mezonů (pi a K). Vznik flavorů v poměru 1:2:0. Po oscilacích bychom měli dostat 1:1:1
+* Temná hmota
+	- měli by ji tvořit prozatím neznáme částice těžší než doposud známé. Jejich poločas rozpadu musí být velice dlouhý -> indukuje nový zákon zachování ve fyzice
+	- částice temné hmoty budou interagovat s hmotou velice slabě a proto je nebude možné detekovat přímo -> nutno detekovat nepřímo rozpady jejich anihilace ve Slunci, v Zemi, v centru galaxie
+	- neutrinové teleskopy jsou vhodné pro hledání částic temné hmoty s energiemi většími než 100 GeV
+	- sleduje se nadbytek nedekce mionů (nad miony z pozadí = atmosférické miony), které přichází od sledovaných objektů.
+* Atmosférická neutrina
+	- kosmické záření produkuje nejintenzivnější tok neutrin od energií 100 MeV až po 100 TeV. Stejná produkce z rozpadů pionů a kaonů = **conventional atmospheric neutrinos**
+	- také existuje jiný druh produkce neutrin a to při energiích 100 TeV a větších = **prompt neutrinos** se vytváří při rozpadech charmed mezonů a baryonů. Jejich spektrum je podobné spektru kosmického záření a je pozvolnější než spektrum conventional atmospheric neutrinos. Zatím nebyly detekovány žádné promptní neutrina. Energie při kterých by proptních neutrin mělo být stejně jako convečních je silně modelově závislá a leží někde okolo 100-1000 TeV pro vertikální neutrina a roste s rostoucím úhlem
+	- atmosférická neutrina mohou být využita pro kalibraci a také se hledají promptní neutrina
+* Magnetické monopóly
+	- koncept uveden Diracem v roce 1931. Ukázal, že lze nakvantovat magnetický náboj (68.5x větší než elementární elektrický náboj). Tudíž jsou ionizační ztráty relativistických monopólů výrazně větší než relatistických mionů
+* Neutrinové interakce 
+	- převážně CC a NC s nukleony, interakce s elektrony je téměř nulová až na oblast rezonance rozptylu elektronové neutrina v oblasti W-rezonance (energie 6.3x10^6GeV)
+

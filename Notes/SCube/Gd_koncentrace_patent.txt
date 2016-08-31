@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-04-06T10:41:35+02:00
+
+====== Gd koncentrace patent ======
+Created Středa 06 duben 2016
+
+Vytvoření závislosti účinnosti detekce neutronů na koncentraci Gd v obou navrhovaných patentových formách (Gd2O3 + izolepa, GdCl3 + voda). Sepsán krátký skript na zpracování nasimulovaných dat file:///Data/UTEF/patent_det/gd.C.  Nejdřív vytvořen podrobný popis i s grafy  file:///Data/UTEF/patent_det/gd.pdf. To se jí, ale nelíbilo, takže jsem vytvořil jenom ty dva obrázky co chtěla s efektivní účinností záchytu. {{file:///Data/UTEF/patent_det/Gd2O3.png?width=900}}{{file:///Data/UTEF/patent_det/GdCl3.png?width=900}}
+Nasimulované hodnoty lze nalézt ve skriptu nebo v poznámkách zde file:///Data/UTEF/patent_det/nasimulovaneHodnotyGd.pdf

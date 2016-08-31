@@ -1,0 +1,141 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-24T13:17:11+01:00
+
+====== NoiseStudyENG ======
+Created Čtvrtek 24 březen 2016
+
+====== NoiseStudy ======
+Created Úterý 22 březen 2016
+
+From the previous measurements we have inconsistent results and we are not sure about the level of noise in the plate and in the triggering foil.
+
+===== Measurement of the noise in the triggering device =====
+
+We would like to know how many of the events in the triggering foil was actually caused by electrons and how many of them is just a noise (gammas and muons or the noise of the foil's PMT ). We decided to measure frequencies with and without electron source.
+
+Only the singnal from the triggering device was used. 10 minutes measurements.
+
+1) without electrons - 15202 events -> 25.33e-/s
+2) with electrons - 16260 events -> 27.10e-/s
+
+Saved files:
+	trgFoil_wthoutElectrons4mV.jpg
+	F1_00000.txt - mistake, nothing important
+	F2_00000.txt - mistake, nothing important
+	F3_00000.txt - area of triggering signal
+	F4_00000.txt - amplitude of triggering signal
+	trgFoil_wthElectrons4mV.jpg
+	F3_00001.txt - area of triggering signal
+	F4_00001.txt - amplitude of triggering signal
+
+Very strange. First of all the rate of events in the foil without electrons is huge. Second, after swithing on the source the increment is less than 2, but in the previous experiments we detected about 4.5 electrons per second (now we know that it probably were not the electrons). We checked it again, because we were worried about the quality of vacuum.
+
+3) without electrons - 15365 events -> 25.61e-/s
+4) with electrons, but 17 minutes instead of 10 - 28694 events -> 28.13e-/s
+
+Saved files:
+	trgFoil_wthoutElectrons4mV1.jpg
+	F3_00002.txt - area of triggering signal
+	F4_00002.txt - amplitude of triggering signal
+	trgFoil_wthElectrons4mV1.jpg
+	F3_00003.txt - area of triggering signal
+	F4_00003.txt - amplitude of triggering signal
+
+It is still very strange. Mobile comunication with Peter and he suggested to change the signal cabel from triggering devide. There are two different PMTs connected to triggering foil so we changed the signal cabel and used the second PMT. It changed a lot.
+
+5) with electrons - 3696 events -> 6.16e-/s
+6) without electrons - 567 events -> 0.95e-/s
+
+Saved files:
+	trgFoilchnl2_wthElectrons4mV.jpg
+	F3_00004.txt - area of triggering signal
+	F4_00004.txt - amplitude of triggering signal
+
+Much more better. It was decided to measure from now with the second channel. Than we don't need to use AND logic for trigger and we can use for triggering only signal from triggering foil (only channel C2). In addition, we can subtract from the results the number of events when there was no electron in the triggering device (only noise = 0.95 e-/s). With triggering with triggering foil we can get really nice strong signal with nice separation of noise and electrons (PS plate, 2% pTP, 3 fibers on the top, position 10 cm from the readout and in the midle of the plate. We are hitting the fiber.)
+
+Saved files:
+	75V_13MeV.jpg
+	F1edge@lvl00000.txt - wrong name, area of plate signal
+	F2edge@lvl00000.txt - wrong name, amplitude of plate signal
+
+{{file:///Data/MatFyz/diplomka/Experiment/muonVeto/Kralupy/backgroundMeas/75V_13MeV.jpg?width=800}}
+
+After the change of the triggering device channel (second PMT) a few screenshots was saved to show how the signal looks like after change. No txt files were saved. These screenshots are just for illustration.
+
+Saved files:
+	75V_20mV_13MeV.jpg
+	75V_20mV_13MeV1.jpg
+	75V_20mV_13MeV2.jpg
+	75V_20mV_13MeV3.jpg
+	75V_20mV_13MeV4.jpg
+	75V_20mV_13MeV5.jpg
+	75V_20mV_13MeV6.jpg
+
+
+===== Measurement of the noise on the SiPM =====
+
+For the measurement of the electrons we would like to know the noise on the three SiPMs connected in the parralel. Petr is affraid that what we can see is just a noise and that we should set really high threshold (~50 mV) to get rid of noise. So we decided to measure noise on the SiPMs connected to the plate with two methods.
+
+a) With the external trigger
+b) With a function Edge@lvl
+
+=== a) With the external trigger ===
+
+External trigger -> 1V, 50Hz, 100ns. STRANGE : if we used frequencies higher than 50 Hz we didn't detect more events, but on the contrary  we saw less events (not so important for measurement).
+
+We measured noise of the SiPM only with amplitude spectrum, because the area spectrum is very distorted because of the random position of the noise signal in our window (only parts of the signals are measured). We measured only the highest amplitude in the time window (1 microsecond). Sometimes 2 or 3 events were present in one event -> it means that we are underestimating smaller amplitudes. In total we measured 50 000 events -> 50miliseconds of integrated time.
+
+Saved files:
+	externaltrigger50Hz.jpg
+	F1_00001.txt - area of plate signal
+	F2_00001.txt - amplitude of plate signal
+
+{{file:///Data/MatFyz/diplomka/Experiment/muonVeto/Kralupy/backgroundMeas/externaltrigger50Hz.jpg?width=800}}
+
+Measured spectrum exhibits strange behaviour in the log scale = there is a kink about 5 mV. It means that there are two different exponentials.
+
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/bckgMeas/backgroundExt.png}}
+
+=== b) with a function edge@lvl ===
+
+In this method we measured 100microsecond windows (10 microseconds/div) and via edge@lvl function we measured how many times the the given threshold was exceeded. In these measurements we studied thresholds 5, 10, 20 and 40 mV with mean values of edge@lvl 23.24,5.79,0.738,0.025.
+
+Saved files:
+	edge@lvl.jpg
+	F3edge vlvl00000.txt - histogram of how many number of events exceeded 5 mV threshold
+	edge@lvl1.jpg
+	F3edge vlvl00001.txt - histogram of how many number of events exceeded 10 mV threshold
+	edge@lvl2.jpg
+	F3edge vlvl00002.txt - histogram of how many number of events exceeded 20 mV threshold
+	edge@lvl1.jpg
+	F3edge vlvl00003.txt - histogram of how many number of events exceeded 40 mV threshold
+	
+
+{{file:///Data/MatFyz/diplomka/Experiment/muonVeto/Kralupy/backgroundMeas/edge%40lvl.jpg?width=800}}
+
+
+We recalculated these numbers to the frequencies in the given range and we did the same with the data from measurements with external trigger to compare the resuts. We expected that the frequencies from measurements with external trigger should show smaller numbers, because when on the screen were more than just one event, we still measured just the highest one. For the processing we use the script [[file:///Data/MatFyz/diplomka/skripts/muonVetoBkgStudy.C|/Data/MatFyz/diplomka/skripts/muonVetoBkgStudy.C]]
+
+Results are in relatively good agreement (x axis - mV, y axis frequency)
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/bckgMeas/backgroundRates.png}}
+These are the frequencies (Hz) in the given range with the given method
+			external trigger	edge@lvl
+(5,10)mV :	 	120280+-1551 	174475+-934.01
+(10,20)mV : 	45620+-955.196	 50500+-502.494
+(20,40)mV : 	5980+-345.832 	7130+-188.812
+(40,100)mV : 	160+-56.5685 		255+-35.7071
+
+===== Petr is worried about noise in our measurements =====
+
+Petr is affraid, that if we measured with the threshold lower than 50 mV, that the frequency of the noise in our data is very high. However it is not true. We got the idea to move the source far away from the scintillator and measure with electrons. No electrons will be present in our scintillator. It means that everything what we will measure is noise. From the picture you can see that there is almost nothing in the region of interest (10,20) nVs -> acording to the picture when the electron source is located over the scintillator. There are about 5 events in our region of interest after 5 minuts measurement, so we don't have to worry about it.
+
+Saved files:
+	75V_13MeV1.jpg
+	F1edge@lvl00001.txt - wrong name, area of plate signal
+	F2edge@lvl00001.txt - wrong name, amplitude of plate signal
+
+{{file:///Data/MatFyz/diplomka/Experiment/muonVeto/Kralupy/backgroundMeas/75V_13MeV1.jpg?width=800}}
+ 
+
+

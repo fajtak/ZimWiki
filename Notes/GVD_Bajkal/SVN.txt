@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-07T14:30:13+02:00
+
+====== SVN ======
+Created Čtvrtek 07 červenec 2016
+
+svn checkout http://svn.server.com/svn/project_repo - stahuje working copy z repository
+svn info - informace o repository a o mojí working copy
+svn status - přičemž ? značí, že systém neví co s daným souborem dělat. Před commitem je třeba přidat změněné soubory do aktualizační listiny (pending change-list)
+svn add file.cc
+svn status - A znamená Added do aktualizační listiny
+svn commit -m "Initial commit" - takto se odesílají změny do repository
+svn log - ukazuje kdo prováděl změny a jaké
+svn status -M znamená Modified
+svn diff - ukazuje změny, které provedl oproti původní verzi
+svn update - stáhne nové verze z repository
+svn revert file.cc - snaže všechny změny v souboru file.cc

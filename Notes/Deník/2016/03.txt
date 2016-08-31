@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-08T14:15:31+01:00
+
+====== březen 2016 ======
+
+1/3 - Bajkal
+2/3 - Bajkal
+3/3 - Bajkal
+4/3 - Bajkal
+5/3 - Bajkal
+6/3 - Bajkal
+7/3 - Úklid tělocvičny, nastříhání vláken, vypsání cesťáku z Bajkalu, začátek zprávy o Bentonitech, diskuze s Petrem o kosmickém vetu, oslava 50-tin
+8/3 - zpráva pro Ivana o bentonitech a vyhořelém palivu, exkurze u Joshyho na kalibrační stínění, simulace pro Joshyho na účinnost detekce gamma v Si detektoru
+9/3 - lepení vlákna do PVT detektoru, sepsání postupu pro spuštění simulací pro Joshyho na TGV
+10/3 - dopoledne příprava scintilátorů, odpoledne měření s Umutem, pochopení měření delta T a změna fotonásobičů pro rovnoměrnější zesílení
+11/3 - dopoledne Joshy projití simulací a pak měření s Umutem, odpoledne projité prezentace s Mariou a zpracování dat z měření na VanDeGrafovi s novámi fóliemi, nakonec lepení vláken a balení scintilátorů
+14/3 - příprava scintilátorů na měření do Kralup
+15/3 - příprava scintilátorů na měření do Kralup
+16/3 - Kralupy měření příčného útlumu - úplně naprd
+17/3 - učení se na zkoušku na Slovensko (Pokročilá částicová fyzika)
+18/3 - zkouška Slovensko
+21/3 -  Dopoledne příprava na cestu do Kralup, Odpoledne měření šumu v Kralupech :MuonVeto:NoiseStudy 
+22/3 - cesťák Slovensko, Kralupy měření PVT scintilátoru
+23/3 - Měření s PVT v Kralupech
+24/3 - Měření s 2%PS a dvěmi vlákny + psaní zprávy z pobytu Umuta
+25/3 - Velikonoce
+28/3 - Velikonoce
+29/3 - Dopoledne UTEF - korespondence, odpoledne Měření Kralupy poslední měření na 2%PS s 2 vlákny na straně + měření s 2%PS a třemi vlákny
+30/3 - Měření Kralupy se 2%PS a třemi vlákny
+31/3 - Měření Kralupy testovací měření s 2%PS a třemi vlákny. Hraní si se signály z SiPM. Testování zesílení SiPM a začátek měření příčného průřezu jenom s jedním SiPM (číslo 2)

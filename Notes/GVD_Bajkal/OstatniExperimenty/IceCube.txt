@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-02-03T15:56:01+01:00
+
+====== IceCube ======
+Created Středa 03 únor 2016
+
+Zpracování dat z let 2010-2012 poskytlo první náznaky toku HE neutrin s extragalaktickým původem.
+
+Zpracování tříletého datasetu (2010-2013) dává stejný tok neutrin jako předchozí práce (10^-8 GeV cm^-2 s^-1 sr^-1 per flavour v rozmezí energií 100TeV - PeV) a zavrhuje tak čistě atmosférickou hypotézu 5.7 sigma. Data jsou konzistentní s 1:1:1 rozdělením flavorů a izotropickým rozdělením směru příchodu. data set má 988 dní čistého měřícího času a obsahuje 37 událostí v energetickém rozsahu (30 - 2000)TeV.
+
+Vznik neutrin v astrofyzikálních objektech při rozpadech nabitých pionů vznikajících při interakci kosmického záření (protony) s plynem nebo zářením. Energie neutrin je pak přibližně 5% energie původního kosmického záření.
+
+Hledání interakce tau neutrin, hledá se jako dvojitá interakce -> nejdříve interakce neutrina a poté rozpad tauonu. Po třech letech měření ani jeden takový případ v energetickém rozmezí 214 TeV až 72 PeV nenalezen.
+

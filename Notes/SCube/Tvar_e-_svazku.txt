@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-11-27T16:45:30+01:00
+
+====== Tvar e- svazku ======
+Created Pátek 27 listopad 2015
+
+Měřeno v Kralupech 25/11/2015 nájezdem svazku na kraj detektoru. Kraj detektoru 576 podle měření, 577 podle fitu.
+
+Data zpracována skriptem file:///Data/MatFyz/diplomka/skripts/beamShape.C
+
+Výsledky zde : file:///Data/MatFyz/diplomka/Results/beamShape.png 
+	Nahoře měřené počty za 2-minutové Runy a dole je chi2 minimalizace {{file:///Data/MatFyz/diplomka/Results/beamShape.png?width=1000}}
+Lze vysvětlit Gaussovským svazkem se sigma = 4mm -> FWHM = 10mm. 

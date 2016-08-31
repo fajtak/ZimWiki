@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-01-06T11:51:39+01:00
+
+====== leden 2016 ======
+
+4/1 - učení na MC
+5/1 - učení na MC (dopo), schůzka na CK RANUS a balení muonového veta (odpo)
+6/1 - lepení vláken a balení (dopo), odvoz detektoru na VanDeGraf (odpo)
+7/1 - měření na VanDeGrafu, měřena nízkoenergetická část spektra při různých thresholdech a vysvětlen tvar signálu
+8/1 - měření na VanDeGrafu, měřena nízkoenergetická část spektra při položení na spodek stínění + ukázka výsledků pro Petra, Rasťu a Máriu
+11/1 - měření na VanDeGrafu, poskládání stínění a vyhodnocení jeho vlivu
+12/1 - měření na VanDeGrafu, změření kolik kosmiky je v nízkoenergetické části spektra (pouze kolem stovek) a zapnuto měření s thresholdem 100mV pro Petra, zařizování víza do Ruska
+13/1 - cesťák na Slovensko a do Ruska, viza Rusko, výsledky [[:SPT|SPT]] za rok 2014 a 2015
+14/1 - porovnání dat z SPT s Joshyho daty, vypadají podobně, ale na SPT4 relativně velké rozdíly v SSE a DSE v ROI, Prezentace na měření SCube v Tróji
+15/1 - vzal jsem si data od Petra, dodělání prezentace na měření SCube v Tróji, učení na zkoušku z Modelování v radiační fyzice
+18/1 - učení na zkoušku z Modelování v radiační fyzice
+19/1 - učení na zkoušku z Modelování v radiační fyzice + cesta na Slovensko
+20/1 - zkouška za A, zpracování dat od Petra
+21/1 - prezentace pro S3Troja
+22/1 - projití prezentace s Maruškou a řešení patentu
+25/1 - let do Ruska
+26/1 - setkání s Fedorem a Rasťou, čtení o GVD
+27/1 - setkání s Igorem B., slíbena práce na DAQ, cesta na Bajkal 25.2., čtení zprávy GVD
+28/1 - poster na GVD na Slovensko, ruština
+29/1 - poster celá verze hotová
+

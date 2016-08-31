@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-04-06T15:44:37+02:00
+
+====== Future plans ======
+Created Středa 06 duben 2016
+
+- measure the same positions also for PS-based scintillator with two and three fibers on the top (IEAP).
+- two Hamamatsu SMD type SiPMs left at IEAP for additional tests and studies (IEAP).
+- two Senzl SiPMs sent to CERN for additional studies (CERN).
+- measure deltaT with two Hamamatsu SiPMs (CERN).
+- measure deltaT with really small triggering scintillator (2x2 cm^2) hitting exactly the fiber (3 fiber version) (CERN, IEAP).

@@ -4,8 +4,18 @@ Creation-Date: 2015-11-09T12:02:19+01:00
 
 ====== listopad 2015 ======
 
-2. listopadu - měření gd vrstev na Van de Grafovi  [[:SCube:Gd_layer]] 
-3. listopadu - zpracování dat z měření Gd vrstev + cesťák na Slovensko 
-4. listopadu - Neutrino colloqium
-5. listopadu - Neutrino colloqium
-6. listopadu (Slovensko) - instalace geantu a rootu na halovi (hal.ruk.cuni.cz) pro simulace mionoveho veta, simulace na tgv s difusním rozptylem na teflonu a školení bezpečnosti práce
+2/11 - měření gd vrstev na Van de Grafovi  [[:SCube:Gd_layer]] 
+3/11 - zpracování dat z měření Gd vrstev + cesťák na Slovensko 
+5/11 - Neutrino colloqium
+6/11 - Neutrino colloqium
+9/11 (Slovensko) - instalace geantu a rootu na halovi (hal.ruk.cuni.cz) pro simulace mionoveho veta, simulace na tgv s difusním rozptylem na teflonu a školení bezpečnosti práce
+10/11 - cesta ze Slovenska, zpráva z cesty ze Slovenska, prezentace na schůzku file:///Data/MatFyz/diplomka/Reports/meeting10112015.pdf, diskuze o S3
+13/11 - Cena Siemense (vyplňování přihlášky), diskuze s Petrem a získání jeho dat, Email o Gd folii, Patenty Bobková, Bauhaus nákup a řezání držáku na stínění
+16/11 - zaslána žádost na nabídku na 500g Gd2O3 (Sigma Aldrich),  na 280 cihel C0 z KOPOS Kolín, zprovozňování Karlvoa skriptu na fitování
+19/11 - Maruška zvážila Gd [[:SCube:Gd_layer]] e-mail Belolaptikovi, nabídka na 280 cihel C0 (71 101 kč bez DPH), cesťáky Rusko a Londýn, simulace na TGV
+23/11 - Zprovozněn skript od Karla na fitování, ale udělány vlastní úpravy, Siemmensova cena - oprava životopisu
+
+24/11 (Kralupy) - měření úplně naprd, nedotažená vakuová pumpa. Měříme s fotonásobičem EA0131, má o 32 cm delší signálový kabel než EA0125
+25/11 (Kralupy) - měření profilu svazku a příčný útlum (x = 576 je hrana detektoru)
+27/11 - peníze do Ruska, zprávy z cesty z Kralup, zpracování dat z Kralup 
+30/11 - cesta do Ruska

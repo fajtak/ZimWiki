@@ -1,0 +1,101 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-24T16:10:55+01:00
+
+====== ElectronSource ======
+Created Čtvrtek 24 březen 2016
+
+Measurements in the Kralupy with tunable and movable e- source with energy 1.3 MeV. We measured longitudinal and lateral attenuation with tree SiPMs serial connections, HV = 75Volts.
+The PVT and PS-based improved scintillator were already tested. Tested positions (x,y) in cm from :
+(10,2), (10,4),(10,5), (10,6), (10,8), (10,10), (10,12),(10,14),(10,15), (10,16), (10,18) - lateral scan
+(30,12), (70,12), (110,12), (130,12) - longitudinal scan
+
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/unnamed%20(2).png}}
+
+STRANGE - probably the SiPM on the right side (higher y) was much more better than the SiPM on the left side. That is the reason why we can not see the exponential behaviour on both sides of the detector. 
+SOLVED - SiPM number 1 is not working at all. Zero signal. Checked with measurement on the same position with different SiPMs. We also measured relative gains of SiPM number 2 (61.31nVs) and SiPM number 3 (63.22nVs) -> G1/G2 = 96.97 %.
+
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/gain.png?width=500}}
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/gainSpectra.png?width=500}}
+
+==== PRELIMINARY RESULTS ====
+
+Scripts for the data procesing are in the folders where are also data files file:///Data/MatFyz/diplomka/Experiment/muonVeto/Kralupy.
+
+==== PVT ====
+
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/pvtTransSpectra.png?width=500}}
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/pvtTrans.png?width=500}}
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/pvtTransFitExp.png?width=500}}
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/pvtTransFitExpAndPol0.png?width=500}}
+Fit results
+	Exp:
+		const = 4.13
+		slope = 0.01331
+	Exp+pol0
+		p0 = 0.1765
+		p1 = 0.1548
+		p2 = 63.928
+
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/pvtLongSpectra.png?width=500}}
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/pvtLong.png?width=500}}
+
+==== PS - 2 fibers ====
+
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/ps2fibTransSpectra.png?width=500}}
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/ps2fibTrans.png?width=500}}
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/ps2fibTransFitExp.png?width=500}}
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/ps2fibTransFitExpAndPol0.png?width=500}}
+Fit results
+	Exp:
+		const = 3.1017
+		slope = 0.03709
+	Exp+pol0
+		p0 = -1.5439
+		p1 = 0.2392
+		p2 = 28.7963
+
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/ps2fibLongSpectra.png?width=500}}
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/ps2fibLong.png?width=500}}
+
+==== PS - 3 fibers ====
+
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/ps3fibTransSpectra.png?width=500}}
+
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/ps3fibTrans.png?width=500}}
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/ps3fibLongSpectra.png?width=500}}
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/ps3fibLong.png?width=500}}
+
+==== PS - 3 fibers SiPM center fiber ====
+
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/ps3fibSipmCenterTransSpectra.png?width=500}}
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/ps3fibSipmCenterTrans.png?width=500}}
+
+==== PS - 3 fibers SiPM left fiber ====
+
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/ps3fibSipmLeftTransSpectra.png?width=500}}
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/ps3fibSipmLeftTrans.png?width=500}}
+
+===== Combined Results =====
+
+Scripts for cobined results file:///Data/MatFyz/diplomka/skripts/transCompElectron.C and file:///Data/MatFyz/diplomka/skripts/transCompElectronN.C
+
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/TransComparison.png?width=800}}
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/TransComparisonN.png?width=800}}
+
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/LongComparison.png?width=800}}
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/electronScans/LongComparisonN.png?width=800}}
+
+===== Discussion =====
+
+PS is according to our measurements twice worse than PVT (measurements with fibers on sides) -> Strange!!! (PVT 1.5 m and  PS 2 m)
+[ ] Check if PVT is twice better also in the deltaT measurements
+It is not possible to reconstruct measurements next day - measurements PS3fibSiPMCenter (position 12_10 and 15_10) and completely different results also measurement PS3fibSiPMLeft (position 2_10, 4_10, 5_10, 6_10) -> Problems with the source? Different energy? Problem with SiPM?
+[ ] Check if it possible to remeasure points with PMT and obtain the same results
+From the measurement with fibers on the side and one not working SiPM we can fit the Transversal scan. However only exponential fit is very bad. It looks much more better if you combine exp and pol0. It means that except exponential component there is also constant component.
+
+== It looks like that fibers on the top of the detector are much more effective than fibers on the side!!! ==
+
+
+
+

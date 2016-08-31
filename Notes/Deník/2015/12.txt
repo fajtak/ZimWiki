@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-12-04T12:13:29+01:00
+
+====== prosinec 2015 ======
+
+1/12 - Baikal workshop
+2/12 - Baikal workshop
+3/12 - Program pro Petra na studium šumu [[:SCube:Studium_sumu]] a psaní Grantu na Slovensko, stahování dat SPT
+4/12 - emaily pro olovo a jeřáb, dodělán program pro Petra na studium šumu a psaní Grantu na Slovensko, stahování dat SPT
+5/12 - stahování SPT a práce na programu
+6/12 - závěrečná zpráva
+7/12 - schůze s Belolaptikovem + přepsání SPT programu
+8/12 - návštěva laboratoří v Moskvě + analýza dat SPT
+9/12 - cesta z Moskvy do Čech
+11/12 - zpráva z cesty, koupě jeřábu a koupě olova.
+14/12 - dat SPT, lepení vlákna
+15-19/12 - NuPhys konference
+21/12 - cesťák Londýn, prezentace o konferenci

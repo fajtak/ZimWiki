@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-05-02T09:17:12+02:00
+
+====== PMTCal ======
+Created Pondělí 02 květen 2016
+
+Kalibrace fotonásobičů pomocí LED světla ovládaného generátorem pulzů, zároveň je generátor použit jako externí trigger. Důležité je energetické (nábojové spektrum).
+
+{{file:///Data/MatFyz/diplomka/Experiment/pmtCal/%23125_800V_20ns_2p9V4.jpg?width=900}}
+
+Skript file:///Data/MatFyz/diplomka/skripts/pmtCalVer2.C načte měřené spektrum. Vypočítá předpokládané hodnoty na základě počtu eventů v nulovém píku a poissonovského rozdělení a poté provede fit několika gaussiány v závislosti na teoretické předpovědi.
+
+Jako výsledek vychází pozice nultého píku a vzdálenost mezi jednotlivými píky. Tyto dvě veličiny lze použít pro kalibraci daného PMT. Také dostáváme rozlišení z pološířky nultého píku.
+
+{{file:///Data/MatFyz/diplomka/Results/PMTcalib/fit.png?width=900}}
+Testovány:
+	R7600U-300 (ID 125) - 24.3 pVs/p.e. 112% rozlišení
+	Kruhový PMT - 22.6 pVs/p.e. 110% rozlišení
+	Malý modulek (použitý při měřeních deltaT) (ID 35) - 8.99 pVs/p.e. 148% rozlišení 
+	Malý modulek (použitý při měřeních deltaT) (ID 42) - 11.75 pVs/p.e. 149% rozlišení
+	
+Dále zkoumáv vliv HV na rozlišení a také vliv délky generovaného pulsu na sílu detekovaného signálu.
+
+{{file:///Data/MatFyz/diplomka/Results/PMTcalib/HVScan.png?width=900}}
+
+{{file:///Data/MatFyz/diplomka/Results/PMTcalib/pulseLength.png?width=900}}
+

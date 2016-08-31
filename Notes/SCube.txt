@@ -7,5 +7,13 @@ Created Pondělí 09 listopad 2015
 
 ==== Měření ====
  [[+Gd_layer]] 
+ +Podelny_utlum
+ +Pricny_utlum
+ [[+Tvar_e-_svazku]] 
 
 ==== Simulace ====
+[[+Studium_sumu]] 
+
+==== Data ====
+[[+Masek_data_format]] 
+[[+18desek_data_processing]] 

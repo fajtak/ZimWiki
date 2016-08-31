@@ -1,0 +1,32 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-12-04T11:16:48+01:00
+
+====== Studium sumu ======
+Created Pátek 04 prosinec 2015
+
+Napsán program na studium vlivu šumu na námi nabíraná data  file:///Data/MatFyz/diplomka/skripts/noiseStudy/noiseStudy.cpp
+
+Vstupní parametry : 
+	* frekvence sumu = 30 000 Hz
+	* trvání šumového eventu = 20 ns
+	* velikost okna trigrovaného eventu = 100 ns
+	* počet studovaných eventů = 100 000 - pouze pro zajištěnídostatečné statistiky
+
+Nagenerování náhodných časů 30 000 šumových eventů v časovém okně (0,1) s a jejich energií.
+
+Pro energie zvolen parametr tau = 2.15 -> dává kolem 10událostí/s pro 15mV události, ale problém s tím, že vyšší události se vůbec nevyskytují, a my bychom měli mít tak kolem 1události/s pro 150 mV událost. Při generování exponenciely se zadává jeden parametr tau -> y = exp(-x/tau).
+
+Ve skutečnosti y = K*exp(-x/tau). Když toto vyintegrujeme od nuly do nekonečna měli bychom dostat počet událostí N -> K = N/tau -> y = N/tau*exp(-x/tau). Pro určení počtu událostí v daném rozsahu N_r (Pro nás 15 až 16) musíme integrovat poslední rovnici pro y od 15 do 16 a dostaneme rovnici pro N_r závislou pouze na tau a N. To nám dává pro N_r = 15 v rozsahu (15,16) a N = 30 000 máme dvě řešení tau_1 = 2.15 a tau_2 = 3000. Tau_2 je nesmyslná, exponenciela je už potom skoro konstatní fce a neklesá.
+
+Potom jsou nagenerovány skutečné eventy v zadaném počtu za sekundu -> 4,10,50,100,500,1000 a je spočítán počet případů, kdy alespoň část šumového eventu zasahuje do integračního okna skutečného eventu. Podmínka je dána, že šumový event není dál než půlka integračního okna + půlka trvání šumového eventu.
+
+==== Výsledky ====
+For 4 events per second there is 0.0148/0.37% of pile ups per second in 25000 cycles
+For 10 events per second there is 0.0345/0.345% of pile ups per second in 10000 cycles
+For 50 events per second there is 0.1845/0.369% of pile ups per second in 2000 cycles
+For 100 events per second there is 0.346/0.346% of pile ups per second in 1000 cycles
+For 500 events per second there is 1.885/0.377% of pile ups per second in 200 cycles
+For 1000 events per second there is 3.54/0.354% of pile ups per second in 100 cycles
+{{file:///Data/MatFyz/diplomka/skripts/noiseStudy/IMG_20151204_121055.jpg?width=1200}}
+

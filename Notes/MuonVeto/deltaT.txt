@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-24T15:43:38+01:00
+
+====== deltaT ======
+Created Čtvrtek 24 březen 2016
+
+Results of delta T measurements for ordinary PS-based scintillator with just a one fiber. Just a preliminary results. Not all the waveforms were processed (about 1/3). For the measurement two scintillator bars (12x5x3 cm^3) were used as axternal triggers and waveforms from both sides of the fiber were collected and saved. Than the deltaT histogram was calculated as Tright - Tleft, while the T was measured when the signal exceeded the 5mV threshold. We can also see the efficiency of the scintillator in different positions (the number of Entries in every histogram / 10000). The efficiency of detection in the future will be dependent on the level of threshold. We can see such a thing in the Cumulative function of Amplitudes.
+
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/unnamed.png}}
+
+The same data were taken also for the scintillator with improved chemical composition (2% pTP) with two fibers and for the PVT scintillator (1.5 m long) with two fibers. And also untriggered measurements were performed for both scintillators. In these measurements one fiber was measured on the left and the other fiber was measured on the right. For the PVT we also measured with the triggering bars close to the fiber and in the middle.
+
+
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/unnamed%20(1).png}}
+
+===== PRELIMINARY RESULTS for the first configuration (one fiber, ordinary PS scintillator), NEEDS TO BE CHECKED!!! =====
+
+=== Center ===
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/psStdDeltaT/Center_deltaT.png}}{{file:///Data/MatFyz/diplomka/Results/MuonVeto/psStdDeltaT/Center_amplitudes.png}}
+
+=== Left ===
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/psStdDeltaT/Left_deltaT.png}}{{file:///Data/MatFyz/diplomka/Results/MuonVeto/psStdDeltaT/Left_amplitudes.png}}
+
+=== Right ===
+{{file:///Data/MatFyz/diplomka/Results/MuonVeto/psStdDeltaT/Right_deltaT.png}}{{file:///Data/MatFyz/diplomka/Results/MuonVeto/psStdDeltaT/Right_amplitudes.png}}

