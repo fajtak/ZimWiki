@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-12T09:32:37+02:00
+
+====== Zpracování koincidencí ======
+Created Pondělí 12 září 2016
+
+Po použití algoritmu na srovnání časů ze dvou zařízení bylo možné přistoupit k samotné analýze dat.
+
+Zpracován celý data set (64 801 s = 18 hodin)
+
+Všechny data
+	1. detektor: 1 197 823 eventů celkem -> 18.48 eventů/s
+	2. detektor: 1 476 786 eventů celkem -> 22.79 eventů/s
+Koincidence
+	Oba detektoru : 1 019 999 eventů celkem -> 15.74 eventů/s.
+	
+Časový vývoj počtu koincidencí za sekundu (osa x - čas od začátku měření v tikách, osa y - množství koincidencí za danou sekundu)
+
+{{file:///Data/ZimPictures/SCube/coincidencesTimeEvolution.png?width=800}}
+Množtví koincidencí za sekundu, tentokrát ne časově závislé (osa x - množství koincidencí za sekundu, osa y - kolik takových sekund bylo)
+
+{{file:///Data/ZimPictures/SCube/coincidencesMeanNumber.png?width=800}}
+Energetický spektrum všech událostí (modře) a pouze koincidenčních událostí pro dané detektory (osa x - energie, osa y - počet) Log scale
+
+{{file:///Data/ZimPictures/SCube/coincidencesEnergySpectra.png?width=800}}
+A ještě jednou do samý se zoomem na nízkoenergetickou část spektra
+
+{{file:///Data/ZimPictures/SCube/coincidencesEnergySpectraZoom.png?width=800}}
+Tady je vidět, kde jsou převážně ty události, který nejsou koincidenční, což by tak nějak dávalo smysl, protože když koincidenci způsobí miony, tak bude s velkou pravděpodobností signál na obou detektorech, pouze šum může způsobit signál jenom na jedný půlce.
+
+A ještě Scatter plot koincidenčních energií (osa x - energie prvního detektoru v koincidenci, osa y - energie druhého detektoru).
+
+{{file:///Data/ZimPictures/SCube/coincidencesScatterPlot.png?width=800}}
+
+

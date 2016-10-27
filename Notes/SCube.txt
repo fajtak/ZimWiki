@@ -15,5 +15,5 @@ Created Pondělí 09 listopad 2015
 [[+Studium_sumu]] 
 
 ==== Data ====
-[[+Masek_data_format]] 
+[[+18desek data processing:Masek data format]] 
 [[+18desek_data_processing]] 

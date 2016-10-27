@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-04T10:04:26+03:00
+
+====== Emacs ======
+Created Úterý 04 říjen 2016
+
+===== Napoveda =====
+Emac's info reader M-x info, nebo C-h i
+C-h F - documentation for a command
+Apropos command M-x apropos-command, nebo C-h a
+M-x describe-mode, nebo C-h m
+M-x describe-key, nebo C-h k
+
+===== Mody =====
+hs-minor-mode
+sr-speedbar-open
+yas-global-mode
+
+company-mode
+company-complete

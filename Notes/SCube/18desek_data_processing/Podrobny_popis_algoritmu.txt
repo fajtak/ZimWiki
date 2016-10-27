@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-04T21:23:44+02:00
+
+====== Podrobny popis algoritmu ======
+Created Neděle 04 září 2016
+
+Podrobný popis algoritmu na zpracování dat z dvou nezávislých jednotek PDM (!!! všechny uváděná čísla jsou uvedena v binech - jak v popisu tak v obrázcích).
+ 
+1) načtení dat
+2) vypočítání počtu událostí za sekundu
+3) vypočítání plochy a vytvoření energetických spekter
+4) vytvoření a naplnění spekter časových rozestupů mezi dvěma událostmi
+5) časový posun všech událostí tak, aby první událost na detekční jednotce měla čas 0. Nebo-li odečtení t_0 od všech událostí. 
+!!! 6) Nalezení všech časových vzdáleností mezi událostmi na jednom PDM v zvoleném časovém okně (v mém případě 10 sekund jinak to moc trvá)
+	6a) Vezme se první událost a její čas a pak se vypočítají její časové rozestupy se všemi následujícímu událostmi bližšími než 10e6 (čistě z časových důvodů, ale zkoušel jsem i jiné)
+!!! 7) takto získané vektory časových rozestupů z dvou různých detektorů jsou porovnány mezi sebou a pokud je tam nalezena událost z prvního detektoru a k ní událost z druhého detektoru, které se neliší o víc než 200 binů
+	7a) Pokud se takové dvě události najdou tak si je zanesu do grafu, který jsem již popisoval dřív a to t_shift vs t_1, kdy na x-ové ose je čas této dvojice tak jak byl zaznamenán na prvním detektoru a t_shift je t_1 - t_2 nebo-li rozdíl časů zaznamenání jedné události na obou jednotkách. Grafu je na následujícím obrázku
+
+{{file:///Data/ZimPictures/SCube/tshiftvst1bezZoomu.png?width=800}}
+	V případě, že se hodně zazoomuje na y-nový ose, tak dostaneme :
+{{file:///Data/ZimPictures/SCube/tshiftvst1.png?width=800}}
+	7b) Tady vidíme, že nám frekvence těch dvou zařízení utíká. Takže, abychom získali, jak časový posun, tak ten rozdíl frekvencí, tak budeme chtít fitnout tyhlety události, co leží na předchozím obrázku na tý přímce. Problém je, že na tom orbázku je i dost šumu, ale ne okolo 227.325 x 10^6 na y-nové ose. Takže udělám průmět všech událostí na osu y a fituju jenom ty události, kde jich je hodně na kupě.
+	
+8) Z tohoto fitu získám posun a přenormování frekvence, takže to aplikuju na všechny události na druhém detektoru a předchozí obrázek se změní takto : 
+
+{{file:///Data/ZimPictures/SCube/tshiftvst1calibrated.png?width=800}}
+takže je všechno krásný. Odstanil jsem jak celkový časový posun, tak ten rozdíl těch frekvencí. Jenže to hezky funguje jenom na malé oblasti. Když tuhle kalibraci použiju pak na celý data, tak to dopadne takhle 
+{{file:///Data/ZimPictures/SCube/tshiftvst1forPetr.png?width=800}}
+9) Tak já se to teda ještě pokusím opravit tou adaptivní kalibrací jak jsi vymyslel, ale selže to, a to hned dvakrát. A tady bych zase od tebe potřeboval poradit nějakej nápad, protože já už jsem pěkně v ... To co jsem se teda rozhodl dělat je, že po tý první kalibraci, která funguje jenom na začátku vezmu první událost tak jak je a podívám se na další událost (a pokud je na obou detektorech v časovém rozestupu menším než 100 binů - což tam mám proto, abych potlačil náhodný události, který by to naprosto pokazily), zjistím si, jaký je její t_shift (y-ová osa v předchozím grafu) a zjistim, jakým faktorem musím opět přeškálovat všechny časy událostí od té druhé nalezené až dokonce na druhém detektoru (i když ve vlastně tahle korekce přesná jenom pro tu druhou událost, já to používám na všechny události až do konce), aby ten t_shift byl = 0 (tedy ideální). Mohl by jsi navrhnout, proč přeškálovávám všechny události a to proto, že doufám, že mi to celou tu křivku narovná poblíž nule, a já potom tím 100 onůvým cutem odříznu všechen šum, který by mi to celý rozházel. Pokud bych tu korekci použil jenom na jednu událost a nepoužíval 100 binový cut, tak si můžeš všimnout na přechozím obrázku, že by tam byla spousta šumových událostí, které by dávali úplně nesmyslné korekce.
+
+Jenže ta metoda s přeškálováním všech událostí má taky svoje nevýhody. Někdy, když jsou tam za sebou dvě události s velkým rozestupem, tak vypočítaná korekce, je relativně velká a pokud je potom nějaká doba bez událostí, tak když už potom událost přijde, tak je mimo 100 binový cut a celá ta metoda už nefunguje. Na dalším obrázku je již vidět, že to jak to používám funguje (opět t_shift vs t_1). 
+{{file:///Data/ZimPictures/SCube/tshiftvst1calibratedNaNula.png?width=800}}
+První událost na t_shift -12 a všechny ostatní už jsou mají tak upravený časy, aby to dávalo nulu. Nicméně ten problém je, že to skončí po 4.5 sekndách, i přesto, že je tam dat výrazně víc a to z toho důvodu, že v tomto čase je taková retardovaná anomálie ukázaná na dalším obrázku (zase to samé jko předtím, ale tentokrát tam ručně vypnu ten vynulovávací algoritmus.) Okolo 440x10^6 jsou tam dvě události, které mají hodně velký rozestup a navíc dlouho za nima se nic neděje, takže když udélám použiju tu relativně velkou korekci, tak už mi další bod okolo 460x10^6 už vyleze z toho 100 binovýho cutu.
+{{file:///Data/ZimPictures/SCube/tshiftvst1calibratedNaNula2.png?width=800}}
+Chápu, že takhle to asi není moc pochopitelný, ale zkus to a kdyby tě něco napadlo, tak to můžeme probrat na skype, kdyby se ti chtělo. Ten můj je fajtak.lukyn 
+
+

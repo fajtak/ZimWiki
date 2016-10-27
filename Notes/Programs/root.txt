@@ -1,0 +1,75 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-27T11:05:58+03:00
+
+====== root ======
+Created Čtvrtek 27 říjen 2016
+
+=== How to make your plots nicer ===
+
+gROOT->SetStyle("Plain"); // set plain TStyle
+gStyle->SetOptStat(111111); // draw statistics on plots,
+// (0) for no output
+gStyle->SetOptFit(1111); // draw fit results on plot,
+// (0) for no ouput
+gStyle->SetPalette(53); // set color map
+gStyle->SetOptTitle(0); // suppress title box
+
+=== How to compile code with CINT and external compiler (only text output) ===
+
+#ifndef __CINT__
+int main() {
+ExampleMacro();
+return 0;
+}
+#endif
+
+=== How to compile the code ===
+
+> g++ -o ExampleMacro.exe ExampleMacro.C \
+`root-config --cflags --libs`
+
+=== How to compile a code with Tcanvas and other visual things ===
+
+#ifndef __CINT__
+void StandaloneApplication(int argc, char** argv) {
+// eventually, evaluate the application parameters argc, argv
+// ==>> here the ROOT macro is called
+ExampleMacro_GUI();
+}
+// This is the standard "main" of C++ starting
+// a ROOT application
+int main(int argc, char** argv) {
+TApplication app("ROOT Application", &argc, argv);
+StandaloneApplication(app.Argc(), app.Argv());
+app.Run();
+return 0;
+}
+#endif
+
+=== How to compile the code ===
+
+> g++ -o ExampleMacro_GUI.exe \
+ExampleMacro_GUI `root-config --cflags --libs`
+
+=== How to work  with a TChain a process more root files at once ===
+
+void read_ntuple_with_chain(){
+	// initiate a TChain with the name of the TTree to be processed
+	TChain in_chain("cond_data");
+	in_chain.Add("conductivity_experiment*.root"); // add files,
+	// wildcards work
+	// define variables and assign them to the corresponding branches
+	float pot, cur, temp, pres;
+	my_tuple->SetBranchAddress("Potential", &pot);
+	my_tuple->SetBranchAddress("Current", &cur);
+	my_tuple->SetBranchAddress("Temperature", &temp);
+	my_tuple->SetBranchAddress("Pressure", &pres);
+	cout << "Potential\tCurrent\tTemperature\tPressure\n";
+	for (size_t irow=0; irow<in_chain.GetEntries(); ++irow){
+		in_chain.GetEntry(irow); // loads all variables that have
+		// been connected to branches
+		cout << pot << "\t" << cur << "\t" << temp <<
+		"\t" << pres << endl;
+	}
+}

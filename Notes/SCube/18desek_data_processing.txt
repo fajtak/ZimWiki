@@ -5,12 +5,14 @@ Creation-Date: 2016-08-31T15:35:58+02:00
 ====== 18desek data processing ======
 Created Středa 31 srpen 2016
 
+[[+Podrobny_popis_algoritmu]] 
+
 Dva kanály. Potřeba udělat časovou korekci dvou asynchronních zařízení. Jedno zařízení je vůči druhému nejenom časově posunuté (z důvodu nevylunování hodin a z důvodu jiného času zapnutí), ale ještě jeho interní hodiny tikají při jiné frakvenci. Viz obrázek uprostřed. Detekce dvou eventů v 1. sekundě a v druhé a to jak je dvě různá zařízení s dvěma různými frekvencemi zachytí. Na prvním zařízení budou mít eventy časy 4 a 8 a na druhém zařízení to budou časy 3 a 8.
 
-{{../../Pictures/IMG_20160831_203928.jpg?width=800}}
+{{file:///Data/ZimPictures/SCube/IMG_20160831_203928.jpg?width=800}}
 
 Zajímavá veličina, kterou studuji, a která mi může pomoct to celé opravit je (t_(shift) = t_1 - t_2) vs t_1, přičemž t_1 je čas události na prvním zařízení a t_2 je její čas na druhém zařízení. Jenom si musím být jistý, že studuju časy pro jednu a tu samou událost detekovanou v obou zařízeních, ale to mám pořešeno vyhledáváním pomocí časových rozestupů. Pokud by byli stejné frekvence, tak by rozestup mezi událostmi byl konstantní, ale tak tomu není. Druhé zařízení vykazuje vyšší frekvenci a tím pádem se časový rozestup t_(shift) neustále zmenšuje, neboť, jak t_2 rychleji tiká, tak za stejný časový okamžik udělá víc tiků a tím pádem, když ho odečítám, tak dostávám meší a menší číslo. Viz následující obrázek, kde je zobrazen t_1 (x-ová osa) vs t_shift (y-oná osa).
-{{../../Pictures/tshiftvst1.png?width=800}}
+{{file:///Data/ZimPictures/SCube/tshiftvst1.png?width=800}}
 Na základě předchozího obrázku může udělat fit a to mi dá korekci k frekvenci druhého zařízení. Nutno podotknout, že zde ke kalibraci použita data za 10 s.
 
 Najitá korekce nám dá jak časový posun, tak korekci k frekvenci. V tomto případě:
@@ -22,12 +24,23 @@ To znamená, že druhé zařízení se rozchází na jeden bin (10^-8 s) o 4.094
 
 V tuto chvíli můžu aplikovat získanou korekci na data a sledovat co se stane s předcházejícím obrázkem. Viz další obrázek
 
-{{../../Pictures/tshiftvst1calibrated.png?width=800}}
+{{file:///Data/ZimPictures/SCube/tshiftvst1calibrated.png?width=800}}
 Můžeme si všimnout, že již zde není žádná časová závislost jako v předchozím grafu a zároveň je celá závislost krásně vycentrována na nulu. Maximální rozestupy jsou ± 10 binů = 100 ns. V tomto místě jsem nadšený a napsal jsem e-mail Petrovi, že to všechno funguje a že jakože krása. Drobné variace v posledním obrázku jsem si vysvětloval tak, že to může být dáno různými energiemi detekovaných událostí (tzv. time walk correction) -> Ale není to tak.
 
 No a zde nastává problém. Tak jsem se teda rozhodl, že když už mám kalibraci, tak, že načtu i další soubory ne jenom první a pokusím se danou kalibraci aplikovat na výrazně větší časové úseky a budu doufat, že to zůstane stejně krásný jako, když jsem zpracovával data z 10s. No a ono prd. Viz následující obrázky, které zobrazují to samé jako ty dva předchozí jenom na delší časové škále.
-{{../../Pictures/tshiftvst1calibratedLongerTime.png?width=800}}
+{{file:///Data/ZimPictures/SCube/tshiftvst1calibratedLongerTime.png?width=800}}
 Tady je vidět, že na časový škále 10 000 sekund to již plave i o víc jak 10 000 binů neboli 100 mikrosekund. A to jenom proto, že to pro větší hodnoty nemám zobrazený. Co je na tom nejhorší je, že jsou tam střídavě vidět jasný trendy nahoru a dolu, což znamená, že ta frekvence toho zařízení není stálá, ale osciluje, s tím, že po nějaký době to převáží výrazně víc na jednu stranu a uteče to z rozsahu a to po třech hodinách měření (Nedej bože po dni).
 
 Pokusím se zamyslet nad tou adaptivní kalibrací, ale už i tohole je docela osina v zadku. Ještě si k tomu představit 8 zařízení najednou. To bude švandy kopec. 
+
+==== Metoda získání kalibrace z blízkých událostí ====
+
+Dobře ještě předtím, než se pustím do adaptivní kalibrace jsem chtěl vyzkoušet ještě něco. Kalibrace první metodou se nedá použít, neboť jak počítám časový vzdálenosti, tak pro rostoucí časový rozsah jich je víc a víc a pak už to trvá příliš dlouho, takže to můžu spustit pro maximálně 200s. Ale ještě jsem si všimnul, když jsem si vykreslil časový vývoj počtu událostí (t_1 osa x, počet udáostí osa y), že jsou tam nějaký dva píky s vysokou intenzitou na přibližně stejných místech. A hlavě vykreslují se tím více čím jemnější dělení binů (časový interval) zvolím. To znamená, že jsou to události, které jsou velice blízko u sebe (šum?).  Na následujícím obrázku můžu vidět, že okolo 15 a 40 jsou takové dva píky.
+
+{{file:///Data/ZimPictures/SCube/timeEvolution.png?width=800}}¨
+Tak jsem si vybral jenom události na jednom kanálu, které jsou ná sledovány další událostí (na stejném kanálu) v časovém okně menším než 120 binů (1.2 micros) a hledal jsem jestli na druhém kanálu nemáme podobnou dvojici v přibližně stejném času. A kupodivu takové opravdu existují. BTW: co to je sakra za události? Vypadá to skoro jako na neutrino like eventy. Přijde signál z obou dvou kanálů (prompt) a co víc v časovém okně do 1.2 micros přijde další signál z obou kanálů (delay).
+
+Tak jsem si takový události vykreslit, opět je fitnul přímkou a získal časový posun a poměr frekvencí. Tahle metoda je skvělá v tom, že bere ohled na celý dataset a je výrazně rychlejší. Ovšem, když si člověk pak vykreslí jak plave časový rozestup mezi fyzikální událostí zachycenou na obou detektorech (t_shift vs t_1 jako v předchozích obrázcích), tak vidí, jak moc špatný to je. Viz následující obrázek. T_shift plave až o 200*10^3 binů neboli 2milisekundy. To znamená, že vskutku nelze použít jednu kalibraci na celý data set, ale je nutné použít rozné kalibrace pro různé časové úseky. Problém bude si pohlídat časové překryvy pro oblasti s různou kalibrací.
+
+{{file:///Data/ZimPictures/SCube/tshiftvs1NoiseMethod.png?width=800}} 
 
